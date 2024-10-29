@@ -2,7 +2,7 @@ import { Typography } from "@material-tailwind/react";
 
 const LINKS = [
     {
-        title: "Creato con",
+        title: "Technology used.",
         items: ["React", "Vite", "Tailwind"],
     },
     {
@@ -19,7 +19,7 @@ const currentYear = new Date().getFullYear();
 
 export default function FooterWithSocialLinks() {
     return (
-        <footer className="fixed bottom-0 w-full">
+        <footer className="bottom-0 w-full pt-8 bg-gray-900">
             <div className="mx-auto w-full max-w-8xl px-8">
                 <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
                     <Typography variant="h5" className="mb-6 text-white" >
