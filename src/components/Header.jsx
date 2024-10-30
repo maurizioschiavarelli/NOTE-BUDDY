@@ -6,7 +6,7 @@ function Header() {
     <>
       <header className="p-8 bg-gradient-to-t from-gray-900 from-10% via-gray-800 via-50% to-gray-900 to-90%">
         <div className="grid mt-16 min-h-[82vh] w-full lg:h-[54rem] md:h-[34rem] place-items-stretch bg-[url('/image/bg-hero-17.svg')] bg-center bg-contain bg-no-repeat">
-          <div className="container mx-auto my-auto px-4 text-center bg-gray-900 rounded-lg shadow-2xl shadow-black bg-opacity-60">
+          <div className="container mx-auto my-auto px-4 text-center bg-gray-900 rounded-lg shadow-2xl shadow-black">
             <Typography
               variant="h1"
               color="white"
@@ -21,7 +21,7 @@ function Header() {
             </Typography>
             <div className="mt-8 grid w-full place-items-start md:justify-center">
               <div className="mb-2 flex w-full flex-col gap-4 md:flex-row">
-                <Button color="gray-900" className="w-full px-4 md:w-[12rem]">
+                <Button className="w-full px-4 md:w-[12rem] bg-gray-800">
                   Get started
                 </Button>
               </div>
