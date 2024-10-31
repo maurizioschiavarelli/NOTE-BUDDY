@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <Header></Header>
+        <Header></Header>
 
       <Footer></Footer>
     </>

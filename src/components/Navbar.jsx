@@ -3,11 +3,16 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import fotoProfilo from '../assets/fotoProfilo.jpeg';
 
+import { Link } from "react-router-dom";
+
+
+
+
 const navigation = [
-  { name: 'Homepage', href: '#', current: true },
-  { name: 'Porfolio', href: '#', current: false },
-  { name: 'Docs', href: '#', current: false },
-  { name: 'About', href: '#', current: false },
+  { name: 'Homepage', to: '/', current: true },
+  { name: 'Porfolio', to: '#', current: false },
+  { name: 'Docs', to: '/docs', current: false },
+  { name: 'About', to: '/about', current: false },
 ]
 
 function classNames(...classes) {
@@ -37,9 +42,9 @@ export default function Example() {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.to}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-gray-100 hover:bg-gray-700 hover:text-white',
@@ -47,7 +52,7 @@ export default function Example() {
                     )}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -77,9 +82,9 @@ export default function Example() {
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                  <Link to={'/'} className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                     Homepage
-                  </a>
+                  </Link>
                 </MenuItem>
               </MenuItems>
             </Menu>
