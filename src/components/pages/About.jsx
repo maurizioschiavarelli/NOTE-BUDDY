@@ -29,12 +29,30 @@ export default function Example() {
                         </div>
                         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                             <dt className="text-lg font-medium text-gray-100">Framework</dt>
-                            <dd className="mt-1 text-lg text-gray-100 sm:col-span-2 sm:mt-0">Laravel, React</dd>
+                            <dd className="mt-1 text-lg text-gray-100 sm:col-span-2 sm:mt-0">
+                                <ul>
+                                    <li className='list-disc'>Laravel</li>
+                                    <li className='list-disc'>React</li>
+                                    <li className='list-disc'>Bootstrap</li>
+                                    <li className='list-disc'>Tailwind</li>
+                                </ul>
+                            </dd>
                         </div>
                         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                             <dt className="text-lg font-medium text-gray-100">About</dt>
                             <dd className="mt-1 text-lg text-gray-100 sm:col-span-2 sm:mt-0">
                                 Sono un appassionatosviluppatore JavaScript, sempre alla ricerca di opportunità per crescere e imparare. Attualmente sto studiando PHP con l obiettivo di diventare un Laravel Developer e un JavaScript Back-End Developer. Sono costantemente impegnato nella mia formazione e crescita professionale.
+                            </dd>
+                        </div>
+                        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt className="text-lg font-medium text-gray-100">Project</dt>
+                            <dd className="mt-1 text-lg text-gray-100 sm:col-span-2 sm:mt-0">
+                                <ul>
+                                    <li className='list-disc'>doTravel</li>
+                                    <li className='list-disc'>Aulab Presto.it</li>
+                                    <li className='list-disc'>Fallout site</li>
+                                    <li className='list-disc'>noteBuddy</li>
+                                </ul>
                             </dd>
                         </div>
                         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
