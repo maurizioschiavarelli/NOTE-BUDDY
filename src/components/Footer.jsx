@@ -17,7 +17,7 @@ const LINKS = [
 
 const currentYear = new Date().getFullYear();
 
-export default function FooterWithSocialLinks() {
+export default function Footer() {
     return (
         <footer className="bottom-0 w-full pt-8 bg-gray-900">
             <div className="mx-auto w-full max-w-8xl px-8">

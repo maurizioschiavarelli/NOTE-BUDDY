@@ -5,9 +5,6 @@ import fotoProfilo from '../assets/fotoProfilo.jpeg';
 
 import { Link } from "react-router-dom";
 
-
-
-
 const navigation = [
   { name: 'Homepage', to: '/', current: false },
   { name: 'Porfolio', to: '#', current: false },

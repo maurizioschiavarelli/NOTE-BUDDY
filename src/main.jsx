@@ -10,6 +10,7 @@ import {
 import './index.css'
 import Docs from './components/pages/Docs';
 import About from './components/pages/About';
+import Javascript from './components/docs/Javascript';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/javascript",
+    element: <Javascript />,
   },
 ]);
 
