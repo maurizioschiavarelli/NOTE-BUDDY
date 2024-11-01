@@ -7,9 +7,9 @@ import Card from "../Card";
 export default function Docs(){
     return (
         <>
-        <Navbar></Navbar>
+        <Navbar navigation></Navbar>
         
-            <div>
+            <div className='flex flex-wrap gap-6 m-auto my-72 justify-center'>
                 <Card></Card>
                 <Card></Card>
                 <Card></Card>

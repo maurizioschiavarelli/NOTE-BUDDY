@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 
 const navigation = [
-  { name: 'Homepage', to: '/', current: true },
+  { name: 'Homepage', to: '/', current: false },
   { name: 'Porfolio', to: '#', current: false },
   { name: 'Docs', to: '/docs', current: false },
   { name: 'About', to: '/about', current: false },
@@ -19,9 +19,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-900 navbar fixed w-screen z-10">
+    <Disclosure as="nav" className="bg-gray-900 navbar w-screen z-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
 
