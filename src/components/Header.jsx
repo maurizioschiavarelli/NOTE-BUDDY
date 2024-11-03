@@ -29,7 +29,7 @@ function Header() {
   return (
     <>
       <div className="bg-gradient-to-b from-gray-900 from-10% to-gray-800 py-10 text-white">
-        <div className="mx-auto max-w-3xl lg:max-w-7xl">
+        <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <h2 className="text-center text-base/7 font-semibold text-white">noteBuddy</h2>
           <p className="mx-auto mt-2 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
             Guida completa alle basi dei principali linguaggi per lo sviluppo web
@@ -109,19 +109,45 @@ function Header() {
                     Tutte le guide per i principali linguaggi e framework per lo sviluppo web
                   </p>
                 </div>
-                <div className="relative min-h-[30rem] flex justify-center">
+                <div className="min-h-[30rem] flex justify-center">
                   <ul className='text-black flex flex-col my-8 px-10 gap-4'>
                     <li>
-                      <button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'><FontAwesomeIcon icon={faJs} size="3x" className='mx-3' />
-                      Javascript
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between transition hover:bg-blue-gray-50 hover:text-gray-900'>
+                        <FontAwesomeIcon icon={faJs} size="3x" className='transition hover:text-yellow-400'/>
+                        Javascript
                       </button>
                     </li>
-                    <li><button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'><FontAwesomeIcon icon={faPhp} size="3x" className='mx-3' />PhP</button></li>
-                    <li><button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'><FontAwesomeIcon icon={faReact} size="3x" className='mx-3' />React</button></li>
-                    <li><button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'><FontAwesomeIcon icon={faLaravel} size="3x" className='mx-3' />Laravel</button></li>
-                    <li><button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'><FontAwesomeIcon icon={faBootstrap} size="3x" className='mx-3' />Bootstrap</button></li>
-                    <li><button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'><Tailwind />Tailwind</button></li>
-                    <li><button className='h-14 w-full px-14 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-center'>Altri in arrivo</button></li>
+                    <li>
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between'><FontAwesomeIcon icon={faPhp} size="3x"/>
+                        PhP
+                      </button>
+                    </li>
+                    <li>
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between'><FontAwesomeIcon icon={faReact} size="3x"/>
+                        React
+                      </button>
+                    </li>
+                    <li>
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between'><FontAwesomeIcon icon={faLaravel} size="3x"/>
+                        Laravel
+                      </button>
+                    </li>
+                    <li>
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between'><FontAwesomeIcon icon={faBootstrap} size="3x"/>
+                        Bootstrap
+                      </button>
+                    </li>
+                    <li>
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between'>
+                        <Tailwind />
+                        Tailwind
+                      </button>
+                    </li>
+                    <li>
+                      <button className='h-14 w-full px-20 text-white rounded bg-gray-700 shadow font-extrabold flex items-center justify-between'>
+                        Altri in arrivo
+                      </button>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -146,7 +172,7 @@ function Header() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
-            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#462611] to-[#e4b20f] opacity-20"
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#533d2e] to-[#0d1fbd] opacity-20"
           />
         </div>
         <div
@@ -158,7 +184,7 @@ function Header() {
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
-            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ad552c] to-[#a05c0d] opacity-20"
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#24203a] to-[#3d05c0] opacity-20"
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 py-8">
