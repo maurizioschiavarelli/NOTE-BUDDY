@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 
-const LINKS = [
+const Links = [
     {
         title: "Technology used.",
         items: ["React", "Vite", "Tailwind"],
@@ -19,14 +19,19 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
     return (
+
         <footer className="bottom-0 w-full pt-8 bg-gray-900">
+
+            {/* ************************* DIV container ************************* */}
             <div className="mx-auto w-full max-w-8xl px-8">
+
+                {/* ************************* Link section ************************* */}
                 <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-                    <Typography variant="h5" className="mb-6 text-white" >
+                    <Typography variant="h5" className="mb-6 text-white">
                         NoteBuddy
                     </Typography>
                     <div className="grid grid-cols-3 justify-between gap-4">
-                        {LINKS.map(({ title, items }) => (
+                        {Links.map(({ title, items }) => (
                             <ul key={title}>
                                 <Typography
                                     variant="small"
@@ -50,14 +55,14 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
+
                 <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
                     <Typography
                         variant="small"
-                        className="mb-4 text-center font-normal text-gray-100 md:mb-0"
-                    >
-                        &copy; {currentYear} <a href="#">NoteBuddy</a>. All
-                        Rights Reserved.
+                        className="mb-4 text-center font-normal text-gray-100 md:mb-0">&copy; {currentYear} 
+                        <a href="#">NoteBuddy</a>. All Rights Reserved.
                     </Typography>
+
                     <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
                         <Typography as="a" href="#" className="text-white opacity-80 transition-opacity hover:opacity-100">
                             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -78,8 +83,10 @@ export default function Footer() {
                             </svg>
                         </Typography>
                     </div>
+                    
                 </div>
             </div>
+
         </footer>
     );
 }

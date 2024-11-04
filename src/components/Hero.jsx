@@ -9,12 +9,13 @@ import { faBootstrap } from "@fortawesome/free-brands-svg-icons";
 import Tailwind from '../assets/MyIcon';
 
 import responsiveImg from '../assets/responsiveImg.png';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
 
         // ************************* DIV container HERO-SECTION ************************* //
-        <div className="bg-gradient-to-b from-gray-900 from-10% to-gray-800 py-10 text-white">
+        <div className="bg-gradient-to-b from-gray-900 from-1% to-gray-800 py-10 text-white">
 
             <div className="mx-auto max-w-2xl lg:max-w-7xl">
 
@@ -63,7 +64,7 @@ export default function Hero() {
                                     La nostra piattaforma è progettata per offrire prestazioni elevate, garantendo tempi di caricamento rapidi e un esperienza utente senza interruzioni
                                 </p>
                             </div>
-                            <div className="flex flex-1 items-center justify-center">
+                            <div className="flex flex-1 items-end justify-center">
                                 <img
                                     className="w-full max-lg:max-w-xs bg-gray-300 rounded-md p-4 mt-4"
                                     src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
@@ -99,7 +100,7 @@ export default function Hero() {
                     <div className="relative lg:row-span-2">
                         <div className="absolute inset-px rounded-lg bg-gray-800 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-                            <div className="pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                            <div className="px-8 pt-8 pb-3 sm:px-10 sm:pb-0 sm:pt-10">
                                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                                     Learning
                                 </p>
@@ -113,10 +114,12 @@ export default function Hero() {
                             <div className="min-h-[30rem] flex justify-center align-bottom mt-8">
                                 <ul className='text-black flex flex-col px-10 gap-4'>
                                     <li>
-                                        <button className='h-14 w-full px-12 sm:px-28 md:px-36 lg:px-20 text-white rounded bg-gray-700 shadow-2xl font-extrabold flex items-center justify-center transition hover:bg-blue-gray-50 hover:text-yellow-400 rounded-t-2xl'>
-                                            <FontAwesomeIcon icon={faJs} size="3x" className='mr-2' />
-                                            Javascript
-                                        </button>
+                                        <Link to="/javascript">
+                                            <button className='h-14 w-full px-12 sm:px-28 md:px-36 lg:px-20 text-white rounded bg-gray-700 shadow-2xl font-extrabold flex items-center justify-center transition hover:bg-blue-gray-50 hover:text-yellow-400 rounded-t-2xl'>
+                                                <FontAwesomeIcon icon={faJs} size="3x" className='mr-2' />
+                                                Javascript
+                                            </button>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button className='h-14 w-full px-12 sm:px-28 md:px-24 lg:px-20 text-white rounded bg-gray-700 shadow-2xl font-extrabold flex items-center justify-center transition hover:bg-blue-gray-50  hover:text-blue-900'>

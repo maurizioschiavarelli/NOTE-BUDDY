@@ -8,7 +8,7 @@ export default function Example() {
     return (
         <>
             <Navbar></Navbar>
-            <div className='bg-gradient-to-b from-gray-900 from-10% to-gray-800'>
+            <div className='bg-gradient-to-b from-gray-900 from-1% to-gray-800 py-10 text-white'>
                 <div className="pt-4">
                     <h3 className="text-3xl font-semibold text-gray-100 gap-4 px-4">Maurizio Schiavarelli</h3>
                     <p className="mt-1 max-w-2xl text-lg text-gray-500 px-4">Personal details and application.</p>

@@ -9,7 +9,7 @@ export default function Docs() {
         <>
             <Navbar></Navbar>
 
-            <div className='flex flex-wrap gap-6 py-10 sm:py-10 m-auto justify-center bg-gradient-to-b from-gray-900 from-10% to-gray-800'>
+            <div className='flex flex-wrap gap-6 py-10 sm:py-10 m-auto justify-center bg-gradient-to-b from-gray-900 from-1% to-gray-800 text-white'>
                 <Card
                     title="JAVASCRIPT"
                     subTitle="Il linguaggio del web"

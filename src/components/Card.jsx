@@ -19,7 +19,7 @@ export default function HorizontalCard(props) {
 
 
   return (
-    <Card className="flex w-full sm:max-w-[48rem] flex-col sm:flex-row m-2 bg-gray-100">
+    <Card className="flex w-full sm:max-w-[48rem] flex-col sm:flex-row m-2 bg-gray-800 text-white shadow-xl">
       <CardHeader
         shadow={false}
         floated={false}
@@ -28,17 +28,17 @@ export default function HorizontalCard(props) {
         <img src={imgUrl} alt="card-image" className="h-full w-full object-cover " />
       </CardHeader>
       <CardBody>
-        <Typography variant="h6" color="gray" className="mb-4 uppercase">
+        <Typography variant="h6" color="white" className="mb-4 uppercase">
           {title}
         </Typography>
-        <Typography variant="h4" color="blue-gray" className="mb-2">
+        <Typography variant="h4" color="white" className="mb-2">
           {subTitle}
         </Typography>
-        <Typography color="gray" className="mb-8 font-normal">
+        <Typography color="white" className="mb-8 font-normal">
           {description}
         </Typography>
         <Link to={link} className="inline-block">
-          <Button variant="text" className="flex items-center gap-2">
+          <Button variant="text" color="white" className="flex items-center gap-2">
             Learn More
             <svg
               xmlns="http://www.w3.org/2000/svg"
