@@ -1,13 +1,14 @@
 import Navbar from '../Navbar';
 import Footer from '../Footer'
 import './Javascript.css';
+import Sidebar from '../Sidebar';
 
 export default function Javascript() {
 
-    return (
-        <>
-            <Navbar></Navbar>
-            <header className="w-full py-8 bg-gray-800">
+  return (
+    <>
+      <Navbar></Navbar>
+      <header className="w-full py-8 bg-gray-800">
         <div className="w-full my-20">
           <div className="relative container w-100% mx-auto my-auto text-center bg-gray-900 rounded-lg shadow-2xl shadow-black">
             <div className="absolute inset-0 bg-[url(./assets/heroImg.jpg)] opacity-40 blur-sm"></div>
@@ -26,7 +27,9 @@ export default function Javascript() {
           </div>
         </div>
       </header>
-            <Footer></Footer>
-        </>
-    )
+
+      <Sidebar></Sidebar>
+      <Footer></Footer>
+    </>
+  )
 }
