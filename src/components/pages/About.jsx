@@ -1,5 +1,4 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
-import '../pages/About.css';
 
 import Navbar from '../Navbar';
 import Footer from '../Footer';

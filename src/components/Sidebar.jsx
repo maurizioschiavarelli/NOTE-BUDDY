@@ -58,8 +58,6 @@ const Sidebar = () => {
           <Link to="/laravel" className="block px-4 py-2 rounded hover:bg-gray-700">Laravel</Link>
           <Link to="/bootstrap" className="block px-4 py-2 rounded hover:bg-gray-700">Bootstrap</Link>
           <Link to="/tailwind" className="block px-4 py-2 rounded hover:bg-gray-700">Tailwind</Link>
-          
-          {/* Aggiungi altri link qui */}
         </nav>
       </div>
     </div>

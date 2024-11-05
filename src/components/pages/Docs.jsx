@@ -1,5 +1,3 @@
-import './Docs.css'
-
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Card from "../Card";
@@ -22,7 +20,8 @@ export default function Docs() {
                     title="PHP"
                     subTitle="Scripting lato server"
                     description="La guida completa per padroneggiare PHP, il linguaggio di scripting lato server. Impara a gestire database, creare sessioni e sviluppare applicazioni web dinamiche."
-                    imgUrl="../src/assets/php.png">
+                    imgUrl="../src/assets/php.png"
+                    link="/Php">
                 </Card>
 
                 <Card

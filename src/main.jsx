@@ -11,6 +11,7 @@ import './index.css'
 import Docs from './components/pages/Docs';
 import About from './components/pages/About';
 import Javascript from './components/docs/Javascript';
+import Php from './components/docs/Php';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/javascript",
     element: <Javascript />,
+  },
+  {
+    path: "/php",
+    element: <Php />,
   },
 ]);
 
