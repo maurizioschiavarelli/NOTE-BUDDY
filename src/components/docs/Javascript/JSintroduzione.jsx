@@ -1,10 +1,10 @@
-import Navbar from '../Navbar';
-import Footer from '../Footer';
-import Sidebar from '../Sidebar';
-import HeaderDocs from '../HeaderDocs';
+import Navbar from '../../Navbar';
+import Footer from '../../Footer';
+import Sidebar from '../../Sidebar';
+import HeaderDocs from '../../HeaderDocs';
 
 const javascriptLinks = [
-  { name: 'Introduzione a JavaScript', to: '/jsintroduzione' },
+  { name: 'Introduzione a JavaScript', to: '/javascript/introduzione' },
   { name: 'Variabili', to: '/javascript/variabili' },
   { name: 'Tipi di Dato', to: '/javascript/tipi-dato' },
   { name: 'Operatori', to: '/javascript/operatori' },
@@ -46,7 +46,7 @@ export default function JSintroduzione() {
         <Sidebar links={javascriptLinks} />
         <div className="flex-1">
           <HeaderDocs
-            title="Guida completa alle basi teoriche di"
+            title="intro js"
             imgUrl="/src/assets/heroImg.jpg"
             subTitle="Javascript"
             description="é il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
@@ -58,5 +58,3 @@ export default function JSintroduzione() {
     </>
   );
 }
-
-

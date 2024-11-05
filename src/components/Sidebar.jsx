@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
-const Sidebar = () => {
+// eslint-disable-next-line react/prop-types
+const Sidebar = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef(null);
 
@@ -52,12 +54,11 @@ const Sidebar = () => {
       <div ref={sidebarRef} className={`h-screen bg-gray-800 text-white w-64 flex flex-col overflow-y-scroll fixed lg:sticky top-28 lg:top-16 transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 z-10`}>
         <div className="p-4 text-2xl font-bold">NoteBuddy</div>
         <nav className="flex-1 px-2 py-4 space-y-2">
-          <Link to="/javascript" className="block px-4 py-2 rounded hover:bg-gray-700">JavaScript</Link>
-          <Link to="/php" className="block px-4 py-2 rounded hover:bg-gray-700">PHP</Link>
-          <Link to="/react" className="block px-4 py-2 rounded hover:bg-gray-700">React</Link>
-          <Link to="/laravel" className="block px-4 py-2 rounded hover:bg-gray-700">Laravel</Link>
-          <Link to="/bootstrap" className="block px-4 py-2 rounded hover:bg-gray-700">Bootstrap</Link>
-          <Link to="/tailwind" className="block px-4 py-2 rounded hover:bg-gray-700">Tailwind</Link>
+          {links.map((link, index) => (
+            <Link key={index} to={link.to} className="block px-4 py-2 rounded hover:bg-gray-700">
+              {link.name}
+            </Link>
+          ))}
         </nav>
       </div>
     </div>

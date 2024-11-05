@@ -1,15 +1,22 @@
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Sidebar from '../Sidebar';
-import HeaderDocs from '../HeaderDocs';
+import HeaderDocs from '../HeaderDocs'; // Assicurati di importare il componente HeaderDocs
 
-export default function PhpHome() {
+const phpLinks = [
+    { name: 'tizio', to: '/javascript/variabili' },
+    { name: 'Tipi di caio', to: '/javascript/tipi-di-dati' },
+    { name: 'asdffdsafdsa', to: '/javascript/funzioni' },
+    { name: 'ddsfdsfadfsadf', to: '/javascript/dom' },
+];
+
+export default function JavascriptPage() {
     return (
         <>
             <Navbar />
 
             <div className="flex">
-                <Sidebar />
+                <Sidebar links={phpLinks} />
                 <div className="flex-1">
                     <HeaderDocs
                         title="Guida completa alle basi teoriche di"
@@ -20,8 +27,13 @@ export default function PhpHome() {
                 </div>
             </div>
 
-
             <Footer />
         </>
     );
 }
+
+
+
+
+
+
