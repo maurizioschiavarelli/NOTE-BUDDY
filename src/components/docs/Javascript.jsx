@@ -3,6 +3,27 @@ import Footer from '../Footer';
 import Sidebar from '../Sidebar';
 import HeaderDocs from '../HeaderDocs';
 
+import {
+  CodeBracketIcon,
+  HashtagIcon,
+  PuzzlePieceIcon,
+  ArrowPathIcon,
+  ClockIcon,
+  SparklesIcon,
+  DocumentIcon,
+  ExclamationCircleIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/solid";
+
+import {
+  Timeline,
+  TimelineItem,
+  TimelineHeader,
+  TimelineIcon,
+  TimelineConnector,
+  Typography
+} from "@material-tailwind/react";
+
 const javascriptLinks = [
   { name: 'Introduzione a JavaScript', to: '/jsintroduzione' },
   { name: 'Variabili', to: '/javascript/variabili' },
@@ -41,16 +62,162 @@ export default function JSintroduzione() {
   return (
     <>
       <Navbar />
-      
-      <div className="flex">
+
+      <div className="flex bg-gray-800">
         <Sidebar links={javascriptLinks} />
         <div className="flex-1">
           <HeaderDocs
             title="Guida completa alle basi teoriche di"
             imgUrl="/src/assets/heroImg.jpg"
             subTitle="Javascript"
-            description="é il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
+            description="è il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
           />
+          <div className="lg:w-1/2 w-full m-auto h-auto">
+            <Timeline className="bg-gray-800">
+              {/* JavaScript Basics */}
+              <TimelineItem className="h-28">
+                <TimelineConnector />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost">
+                    <CodeBracketIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Introduction to JavaScript </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Introduzione al linguaggio JavaScript, le sue origini e il suo impiego nello sviluppo web.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Variables, Data Types */}
+              <TimelineItem className="h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="yellow">
+                    <HashtagIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Variables and Data Types </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Esplorazione delle variabili e dei principali tipi di dato in JavaScript (String, Number, Boolean, ecc.).
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Functions */}
+              <TimelineItem className="h-28">
+                <TimelineConnector />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="blue">
+                    <PuzzlePieceIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Functions and Scope </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Le funzioni in JavaScript, la loro definizione e l importanza del concetto di scope e closure.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Loops and Conditionals */}
+              <TimelineItem className="h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="red">
+                    <ArrowPathIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Loops and Conditionals </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Come utilizzare cicli (for, while) e strutture condizionali (if-else) per il flusso logico del programma.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Asynchronous JavaScript (Callbacks, Promises) */}
+              <TimelineItem className="h-28">
+                <TimelineConnector />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="green">
+                    <ClockIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Asynchronous JavaScript </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      La gestione dell asincronicità in JavaScript, inclusi callback, promesse e la sintassi async/await.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* ES6 Features (Arrow Functions, Classes, Modules) */}
+              <TimelineItem className="h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="purple">
+                    <SparklesIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> ES6 Features </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Introduzione alle nuove funzionalità di JavaScript con ES6: arrow functions, classi, moduli e altro.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* DOM Manipulation */}
+              <TimelineItem className="h-28">
+                <TimelineConnector />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="orange">
+                    <DocumentIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> DOM Manipulation </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Manipolazione del DOM per interagire dinamicamente con il contenuto di una pagina web.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Error Handling and Debugging */}
+              <TimelineItem className="h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="indigo">
+                    <ExclamationCircleIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Error Handling & Debugging </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Come gestire gli errori in JavaScript con try-catch e come fare il debug del codice.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Advanced Topics (Web APIs, Frameworks, etc.) */}
+              <TimelineItem className="h-28">
+                <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="pink">
+                    <PhoneIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="blue-gray"> Advanced JavaScript (Web APIs, Frameworks) </Typography>
+                    <Typography variant="small" color="gray" className="font-normal">
+                      Approfondimento su Web APIs, frameworks JavaScript e tecniche avanzate per lo sviluppo web.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+            </Timeline>
+          </div>
         </div>
       </div>
 
@@ -58,5 +225,3 @@ export default function JSintroduzione() {
     </>
   );
 }
-
-
