@@ -1,4 +1,4 @@
-import Navbar from '../Navbar';
+import Navbar from '../Navbar ';
 import Footer from '../Footer';
 import Sidebar from '../Sidebar';
 import HeaderDocs from '../HeaderDocs'; // Assicurati di importare il componente HeaderDocs
