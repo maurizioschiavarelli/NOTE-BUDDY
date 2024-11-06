@@ -5,10 +5,8 @@ function Header() {
 
   return (
     <>
-      <Hero></Hero>
-      
-      <DescriptionHome></DescriptionHome>
-
+      <Hero />
+      <DescriptionHome />
     </>
   );
 }

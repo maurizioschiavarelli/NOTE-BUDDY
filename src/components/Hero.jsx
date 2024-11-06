@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faPhp } from "@fortawesome/free-brands-svg-icons";
@@ -14,21 +12,21 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
     return (
 
-        // ************************* DIV container HERO-SECTION ************************* //
+        // Contenitore principale della sezione HERO
         <div className="bg-gradient-to-b from-gray-900 from-1% to-gray-800 py-10 text-white">
 
             <div className="mx-auto max-w-2xl lg:max-w-7xl">
 
-                {/* ************************* Title section ************************* */}
+                {/* Sezione titolo */}
                 <h1 className="text-center text-4xl font-semibold text-white">noteBuddy</h1>
                 <p className="mx-auto mt-2 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
                     Guida completa alle basi dei principali linguaggi per lo sviluppo web
                 </p>
 
-                {/* ************************* Section "mobile friendly", "Performance", "Security", "Learning" container ************************* */}
+                {/* Sezione contenitore "mobile friendly", "Performance", "Security", "Learning" */}
                 <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
 
-                    {/* ************************* Section "mobile friendly" container ************************* */}
+                    {/* Sezione "mobile friendly" */}
                     <div className="relative lg:row-span-2">
                         <div className="absolute inset-px rounded-lg bg-gray-800 lg:rounded-l-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
@@ -37,7 +35,7 @@ export default function Hero() {
                                     Mobile friendly
                                 </p>
                                 <p className="mt-2 max-w-lg text-sm/6 max-lg:text-center">
-                                    La nostra piattaforma è ottimizzata per dispositivi mobili, garantendo un esperienza utente fluida e accessibile ovunque tu sia.
+                                    La nostra piattaforma è ottimizzata per dispositivi mobili, garantendo un&apos;esperienza utente fluida e accessibile ovunque tu sia.
                                 </p>
                             </div>
                             <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
@@ -52,7 +50,7 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* ************************* Section "Performance" container ************************* */}
+                    {/* Sezione "Performance" */}
                     <div className="relative max-lg:row-start-1">
                         <div className="absolute inset-px rounded-lg bg-gray-800 max-lg:rounded-t-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
@@ -61,20 +59,20 @@ export default function Hero() {
                                     Performance
                                 </p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-white max-lg:text-center">
-                                    La nostra piattaforma è progettata per offrire prestazioni elevate, garantendo tempi di caricamento rapidi e un esperienza utente senza interruzioni
+                                    La nostra piattaforma è progettata per offrire prestazioni elevate, garantendo tempi di caricamento rapidi e un&apos;esperienza utente senza interruzioni.
                                 </p>
                             </div>
                             <div className="flex flex-1 items-end justify-center">
                                 <img
                                     className="w-full max-lg:max-w-xs bg-gray-300 rounded-md p-4 mt-4"
                                     src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
-                                    alt=""
+                                    alt="Immagine rappresentativa delle prestazioni"
                                 />
                             </div>
                         </div>
                     </div>
 
-                    {/* ************************* Section "Security" container ************************* */}
+                    {/* Sezione "Security" */}
                     <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
                         <div className="absolute inset-px rounded-lg bg-gray-800"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
@@ -90,13 +88,13 @@ export default function Hero() {
                                 <img
                                     className="h-[min(152px,40cqw)] w-full object-cover object-center bg-gray-300 rounded-md mt-4"
                                     src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                                    alt=""
+                                    alt="Immagine rappresentativa della sicurezza"
                                 />
                             </div>
                         </div>
                     </div>
 
-                    {/* ************************* Section "Learning" container ************************* */}
+                    {/* Sezione "Learning" */}
                     <div className="relative lg:row-span-2">
                         <div className="absolute inset-px rounded-lg bg-gray-800 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
@@ -105,12 +103,11 @@ export default function Hero() {
                                     Learning
                                 </p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-white max-lg:text-center mb-10">
-                                    Tutte le guide per i principali linguaggi e framework lato frontend e lato backend, dal livello base a livello avanzato.
-                                    Scopri tutte le guide complete per i principali linguaggi di programmazione e framework, sia lato frontend che backend. Le nostre risorse coprono ogni aspetto, dai concetti di base fino alle tecniche avanzate
+                                    Scopri le guide complete per i principali linguaggi di programmazione e framework, sia per il frontend che per il backend. Le nostre risorse coprono ogni aspetto, dai concetti di base fino alle tecniche avanzate.
                                 </p>
                             </div>
 
-                            {/* ************************* Section Button Link ************************* */}
+                            {/* Sezione dei pulsanti di collegamento */}
                             <div className="min-h-[30rem] flex justify-center align-bottom mt-8">
                                 <ul className='text-black flex flex-col px-10 gap-4'>
                                     <li>
@@ -166,6 +163,5 @@ export default function Hero() {
             </div>
 
         </div>
-    )
-
+    );
 }

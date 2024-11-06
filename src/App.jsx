@@ -1,27 +1,25 @@
 import './App.css';
 
-// Navbar import
+// Import Navbar
 import Navbar from './components/Navbar';
 import './components/Navbar.css';
 
-// Footer import
+// Import Footer
 import Footer from './components/Footer';
 
-// Header import
+// Import Header
 import Header from './components/Header';
 
 function App() {
-
-
   return (
     <>
-      <Navbar></Navbar>
-
-        <Header></Header>
-
-      <Footer></Footer>
+      <Navbar />
+      
+      <Header />
+      
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

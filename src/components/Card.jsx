@@ -11,12 +11,7 @@ import { Link } from "react-router-dom";
 
 export default function HorizontalCard(props) {
 
-  const title = props.title;
-  const subTitle = props.subTitle;
-  const description = props.description;
-  const imgUrl = props.imgUrl;
-  const link = props.link;
-
+  const { title, subTitle, description, imgUrl, link } = props;
 
   return (
     <Card className="flex w-full sm:max-w-[48rem] flex-col sm:flex-row m-2 bg-gray-800 text-white shadow-xl">
@@ -25,7 +20,11 @@ export default function HorizontalCard(props) {
         floated={false}
         className="m-0 w-full sm:w-2/5 shrink-0 rounded-lg"
       >
-        <img src={imgUrl} alt="card-image" className="h-full w-full object-cover " />
+        <img
+          src={imgUrl}
+          alt={`Immagine di ${title}`}
+          className="h-full w-full object-cover"
+        />
       </CardHeader>
       <CardBody>
         <Typography variant="h6" color="white" className="mb-4 uppercase">
@@ -39,7 +38,7 @@ export default function HorizontalCard(props) {
         </Typography>
         <Link to={link} className="inline-block">
           <Button variant="text" color="white" className="flex items-center gap-2">
-            Learn More
+            Scopri di più
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

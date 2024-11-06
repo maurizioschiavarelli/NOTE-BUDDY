@@ -8,9 +8,7 @@ const Sidebar = ({ links, home, currentPage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef(null);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleSidebar = () => setIsOpen(!isOpen);
 
   const handleClickOutside = (event) => {
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -31,11 +29,11 @@ const Sidebar = ({ links, home, currentPage }) => {
 
   return (
     <div>
-      {/* Icona di hamburger per schermi piccoli */}
+      {/* Icona hamburger per schermi piccoli */}
       <div className="lg:hidden fixed z-20 flex items-center space-x-2 p-3 text-white bg-gray-600/75 w-full">
-        <button onClick={toggleSidebar}>
+        <button onClick={toggleSidebar} aria-label="Toggle sidebar">
           {isOpen ? (
-            <XMarkIcon className="h-8 w-8" />
+            <XMarkIcon className="h-8 w-8" aria-hidden="true" />
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +42,7 @@ const Sidebar = ({ links, home, currentPage }) => {
               strokeWidth={1.5}
               stroke="currentColor"
               className="h-8 w-8"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -60,7 +59,11 @@ const Sidebar = ({ links, home, currentPage }) => {
       {/* Sidebar */}
       <div
         ref={sidebarRef}
-        className={`h-screen bg-gray-800 text-white w-64 flex flex-col overflow-y-scroll fixed lg:sticky top-28 lg:top-16 transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 z-10`}
+        className={`h-screen bg-gray-800 text-white w-64 flex flex-col overflow-y-scroll fixed lg:sticky top-28 lg:top-16 transition-transform transform ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        } lg:translate-x-0 z-10`}
+        role="navigation"
+        aria-label="Sidebar navigation"
       >
         <div className="p-4 text-2xl font-bold">NoteBuddy</div>
         <nav className="flex-1 px-2 py-4 space-y-2">
@@ -69,6 +72,7 @@ const Sidebar = ({ links, home, currentPage }) => {
               key={index}
               to={link.to}
               className="block px-4 py-2 rounded hover:bg-gray-700"
+              aria-label={`Navigate to ${link.name}`}
             >
               {link.name}
             </Link>

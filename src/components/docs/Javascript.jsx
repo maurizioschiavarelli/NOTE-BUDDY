@@ -70,7 +70,7 @@ export default function Javascript() {
         <Sidebar
           links={javascriptLinks}
           home="Javascript"
-          currentPage="Javascript home"
+          currentPage="Argomenti"
         />
         <div className="flex-1">
           <HeaderDocs
@@ -79,10 +79,28 @@ export default function Javascript() {
             subTitle="Javascript"
             description="è il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
           />
-          <div className='lg:w-3/4 w-11/12 m-auto h-auto my-10 lg:my-0'>
-            <h2 className='text-2xl font-bold'>Cosa imparerai in questo corso di js</h2>
-            
+          <div className='lg:w-3/4 w-11/12 m-auto h-auto my-10 lg:my-0 lg:mb-10 text-white'>
+            <div className="course-description">
+              <h2 className="text-3xl font-semibold mb-4">Cosa imparerai nella guida?</h2>
+              <p className="text-lg mb-6">
+                In questa guida, apprenderai le basi della programmazione utilizzando la sintassi di JavaScript. I concetti che esplorerai sono fondamentali per lavorare con JavaScript in vari ambienti di sviluppo.
+              </p>
+
+              <p className="text-lg mb-4 font-medium">Al termine della guida, sarai in grado di:</p>
+
+              <ul className="list-inside list-disc text-lg space-y-3">
+                <li className="pl-4">Implementare i tipi di dato di JavaScript, i metodi predefiniti e le variabili.</li>
+                <li className="pl-4">Utilizzare le strutture condizionali per controllare il flusso di un programma in JavaScript.</li>
+                <li className="pl-4">Creare funzioni e passare dati attraverso di esse in modo efficiente.</li>
+                <li className="pl-4">Comprendere e utilizzare gli scope globali e a livello di blocco in JavaScript.</li>
+                <li className="pl-4">Lavorare con gli array per memorizzare e gestire dati complessi.</li>
+                <li className="pl-4">Utilizzare i cicli (loop) per eseguire blocchi di codice ripetutamente e automatizzare compiti.</li>
+                <li className="pl-4">Semplificare l&apos;iterazione sugli array tramite metodi degli iteratori.</li>
+                <li className="pl-4">Applicare la sintassi ES6 degli oggetti di JavaScript per modellare entità del mondo reale.</li>
+              </ul>
+            </div>
           </div>
+
           <div className="lg:w-3/4 w-11/12 m-auto h-auto my-10 lg:my-0">
             <Timeline className="bg-gray-800">
               {/* Introduzione a JavaScript */}

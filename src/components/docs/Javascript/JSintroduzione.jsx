@@ -4,8 +4,8 @@ import Sidebar from '../../Sidebar';
 import HeaderDocs from '../../HeaderDocs';
 
 const javascriptLinks = [
-  { name: 'Javascript', to: '/javascript' },
-  { name: '• Introduzione a JavaScript', to: '/javascript/introduzione' },
+  { name: 'JavaScript', to: '/javascript' },
+  { name: '• Introduzione a JavaScript', to: '/jsintroduzione' },
   { name: 'Variabili', to: '/javascript/variabili' },
   { name: 'Tipi di Dato', to: '/javascript/tipi-dato' },
   { name: 'Operatori', to: '/javascript/operatori' },
@@ -44,17 +44,18 @@ export default function JSintroduzione() {
       <Navbar />
       
       <div className="flex">
-      <Sidebar
-        links={javascriptLinks}
-        home="Javascript"
-        currentPage="Introduzione"
-      />
+        <Sidebar
+          links={javascriptLinks}
+          home="JavaScript"
+          currentPage="Introduzione"
+        />
+        
         <div className="flex-1">
           <HeaderDocs
-            title="intro js"
+            title="Introduzione a JavaScript"
             imgUrl="/src/assets/heroImg.jpg"
-            subTitle="Javascript"
-            description="é il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
+            subTitle="Il linguaggio JavaScript"
+            description="JavaScript è il principale linguaggio di programmazione per lo sviluppo frontend. Questa guida ti aiuterà a comprendere le basi di JavaScript e ad applicarle per la manipolazione del DOM e lo sviluppo di applicazioni web moderne."
           />
         </div>
       </div>
