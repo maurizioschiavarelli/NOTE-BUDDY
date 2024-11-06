@@ -13,6 +13,8 @@ import {
   DocumentIcon,
   ExclamationCircleIcon,
   PhoneIcon,
+  DocumentTextIcon,
+  CubeIcon
 } from "@heroicons/react/24/solid";
 
 import {
@@ -77,9 +79,13 @@ export default function Javascript() {
             subTitle="Javascript"
             description="è il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
           />
+          <div className='lg:w-3/4 w-11/12 m-auto h-auto my-10 lg:my-0'>
+            <h2 className='text-2xl font-bold'>Cosa imparerai in questo corso di js</h2>
+            
+          </div>
           <div className="lg:w-3/4 w-11/12 m-auto h-auto my-10 lg:my-0">
             <Timeline className="bg-gray-800">
-              {/* JavaScript Basics */}
+              {/* Introduzione a JavaScript */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
                 <TimelineConnector />
                 <TimelineHeader className="relative rounded-t-xl bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
@@ -87,7 +93,7 @@ export default function Javascript() {
                     <CodeBracketIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Introduction to JavaScript </Typography>
+                    <Typography variant="h6" color="white"> Introduzione a JavaScript </Typography>
                     <Typography variant="small" color="white" className="font-normal">
                       Introduzione al linguaggio JavaScript, le sue origini e il suo impiego nello sviluppo web.
                     </Typography>
@@ -95,7 +101,7 @@ export default function Javascript() {
                 </TimelineHeader>
               </TimelineItem>
 
-              {/* Variables, Data Types */}
+              {/* Variabili e Tipi di Dato */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
                 <TimelineConnector className="!w-[78px]" />
                 <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
@@ -103,7 +109,7 @@ export default function Javascript() {
                     <HashtagIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Variables and Data Types </Typography>
+                    <Typography variant="h6" color="white"> Variabili e Tipi di Dato </Typography>
                     <Typography variant="small" color="white" className="font-normal">
                       Esplorazione delle variabili e dei principali tipi di dato in JavaScript (String, Number, Boolean, ecc.).
                     </Typography>
@@ -111,71 +117,39 @@ export default function Javascript() {
                 </TimelineHeader>
               </TimelineItem>
 
-              {/* Functions */}
+              {/* Loop (Cicli) */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
                 <TimelineConnector />
-                <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                  <TimelineIcon className="p-3" variant="ghost" color="blue">
-                    <PuzzlePieceIcon className="h-5 w-5" />
-                  </TimelineIcon>
-                  <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Functions and Scope </Typography>
-                    <Typography variant="small" color="white" className="font-normal">
-                      Le funzioni in JavaScript, la loro definizione e l importanza del concetto di scope e closure.
-                    </Typography>
-                  </div>
-                </TimelineHeader>
-              </TimelineItem>
-
-              {/* Loops and Conditionals */}
-              <TimelineItem className="h-40 sm:h-36 lg:h-28">
-                <TimelineConnector className="!w-[78px]" />
                 <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
                   <TimelineIcon className="p-3" variant="ghost" color="red">
                     <ArrowPathIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Loops and Conditionals </Typography>
+                    <Typography variant="h6" color="white"> Loop (Cicli) </Typography>
                     <Typography variant="small" color="white" className="font-normal">
-                      Come utilizzare cicli (for, while) e strutture condizionali (if-else) per il flusso logico del programma.
+                      Come utilizzare cicli (for, while) per gestire iterazioni nei programmi JavaScript.
                     </Typography>
                   </div>
                 </TimelineHeader>
               </TimelineItem>
 
-              {/* Asynchronous JavaScript (Callbacks, Promises) */}
-              <TimelineItem className="h-40 sm:h-36 lg:h-28">
-                <TimelineConnector />
-                <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                  <TimelineIcon className="p-3" variant="ghost" color="green">
-                    <ClockIcon className="h-5 w-5" />
-                  </TimelineIcon>
-                  <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Asynchronous JavaScript </Typography>
-                    <Typography variant="small" color="white" className="font-normal">
-                      La gestione dell asincronicità in JavaScript, inclusi callback, promesse e la sintassi async/await.
-                    </Typography>
-                  </div>
-                </TimelineHeader>
-              </TimelineItem>
-
-              {/* ES6 Features (Arrow Functions, Classes, Modules) */}
+              {/* Scope e Closures */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
                 <TimelineConnector className="!w-[78px]" />
                 <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                  <TimelineIcon className="p-3" variant="ghost" color="purple">
-                    <SparklesIcon className="h-5 w-5" />
+                  <TimelineIcon className="p-3" variant="ghost" color="blue">
+                    <PuzzlePieceIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> ES6 Features </Typography>
+                    <Typography variant="h6" color="white"> Scope e Closures </Typography>
                     <Typography variant="small" color="white" className="font-normal">
-                      Introduzione alle nuove funzionalità di JavaScript con ES6: arrow functions, classi, moduli e altro.
+                      La gestione dello scope in JavaScript e il concetto di closure per la gestione delle variabili.
                     </Typography>
                   </div>
                 </TimelineHeader>
               </TimelineItem>
 
-              {/* DOM Manipulation */}
+              {/* Eventi */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
                 <TimelineConnector />
                 <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
@@ -183,15 +157,63 @@ export default function Javascript() {
                     <DocumentIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> DOM Manipulation </Typography>
+                    <Typography variant="h6" color="white"> Eventi </Typography>
                     <Typography variant="small" color="white" className="font-normal">
-                      Manipolazione del DOM per interagire dinamicamente con il contenuto di una pagina web.
+                      Come gestire eventi in JavaScript (click, change, submit, etc.) per interazioni utente.
                     </Typography>
                   </div>
                 </TimelineHeader>
               </TimelineItem>
 
-              {/* Error Handling and Debugging */}
+              {/* Asincronicità (Callback, Promises, async/await) */}
+              <TimelineItem className="h-40 sm:h-36 lg:h-28">
+                <TimelineConnector />
+                <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="green">
+                    <ClockIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="white"> Asincronicità (Callback, Promises, async/await) </Typography>
+                    <Typography variant="small" color="white" className="font-normal">
+                      La gestione dell&apos;asincronicità in JavaScript, inclusi callback, promesse e la sintassi async/await.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* ES6 e Nuove Funzionalità */}
+              <TimelineItem className="h-40 sm:h-36 lg:h-28">
+                <TimelineConnector className="!w-[78px]" />
+                <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="purple">
+                    <SparklesIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="white"> ES6 e Nuove Funzionalità </Typography>
+                    <Typography variant="small" color="white" className="font-normal">
+                      Introduzione alle nuove funzionalità di JavaScript con ES6: arrow functions, classi, moduli e altro.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Modulo (import/export) */}
+              <TimelineItem className="h-40 sm:h-36 lg:h-28">
+                <TimelineConnector />
+                <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="blue">
+                    <DocumentTextIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="white"> Modulo (import/export) </Typography>
+                    <Typography variant="small" color="white" className="font-normal">
+                      Come strutturare il codice usando moduli in JavaScript con import/export.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Errori e Debugging */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
                 <TimelineConnector className="!w-[78px]" />
                 <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
@@ -199,7 +221,7 @@ export default function Javascript() {
                     <ExclamationCircleIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Error Handling & Debugging </Typography>
+                    <Typography variant="h6" color="white"> Errori e Debugging </Typography>
                     <Typography variant="small" color="white" className="font-normal">
                       Come gestire gli errori in JavaScript con try-catch e come fare il debug del codice.
                     </Typography>
@@ -207,21 +229,38 @@ export default function Javascript() {
                 </TimelineHeader>
               </TimelineItem>
 
-              {/* Advanced Topics (Web APIs, Frameworks, etc.) */}
+              {/* Prototipi e Ereditarietà */}
               <TimelineItem className="h-40 sm:h-36 lg:h-28">
-                <TimelineHeader className="relative rounded-b-xl bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                <TimelineConnector />
+                <TimelineHeader className="relative bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
                   <TimelineIcon className="p-3" variant="ghost" color="pink">
                     <PhoneIcon className="h-5 w-5" />
                   </TimelineIcon>
                   <div className="flex flex-col gap-1">
-                    <Typography variant="h6" color="white"> Advanced JavaScript (Web APIs, Frameworks) </Typography>
+                    <Typography variant="h6" color="white"> Prototipi e Ereditarietà </Typography>
                     <Typography variant="small" color="white" className="font-normal">
-                      Approfondimento su Web APIs, frameworks JavaScript e tecniche avanzate per lo sviluppo web.
+                      Introduzione al concetto di prototipi e ereditarietà in JavaScript.
+                    </Typography>
+                  </div>
+                </TimelineHeader>
+              </TimelineItem>
+
+              {/* Web APIs */}
+              <TimelineItem className="h-40 sm:h-36 lg:h-28">
+                <TimelineHeader className="relative rounded-b-xl bg-gray-900 py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                  <TimelineIcon className="p-3" variant="ghost" color="teal">
+                    <CubeIcon className="h-5 w-5" />
+                  </TimelineIcon>
+                  <div className="flex flex-col gap-1">
+                    <Typography variant="h6" color="white"> Web APIs (Fetch, LocalStorage, SessionStorage) </Typography>
+                    <Typography variant="small" color="white" className="font-normal">
+                      Utilizzo delle Web APIs di JavaScript come Fetch, LocalStorage e SessionStorage.
                     </Typography>
                   </div>
                 </TimelineHeader>
               </TimelineItem>
             </Timeline>
+
           </div>
         </div>
       </div>
