@@ -7,7 +7,7 @@ export default function HeaderDocs(props) {
     const imgUrl = props.imgUrl;
 
     return (
-        <div className="py-8 bg-gray-800 w-full p-10">
+        <div className="py-8 bg-gradient-to-b from-gray-900 from-1% to-gray-800 w-full p-10">
             <div className="my-20">
                 <div className="relative container w-full mx-auto my-auto text-center bg-gray-900 rounded-lg shadow-2xl shadow-black">
                     <div className="absolute inset-0 opacity-40 blur-sm" style={{ backgroundImage: `url(${imgUrl})` }}></div>

@@ -4,7 +4,8 @@ import Sidebar from '../../Sidebar';
 import HeaderDocs from '../../HeaderDocs';
 
 const javascriptLinks = [
-  { name: 'Introduzione a JavaScript', to: '/javascript/introduzione' },
+  { name: 'Javascript', to: '/javascript' },
+  { name: '• Introduzione a JavaScript', to: '/javascript/introduzione' },
   { name: 'Variabili', to: '/javascript/variabili' },
   { name: 'Tipi di Dato', to: '/javascript/tipi-dato' },
   { name: 'Operatori', to: '/javascript/operatori' },
@@ -43,7 +44,11 @@ export default function JSintroduzione() {
       <Navbar />
       
       <div className="flex">
-        <Sidebar links={javascriptLinks} />
+      <Sidebar
+        links={javascriptLinks}
+        home="Javascript"
+        currentPage="Introduzione"
+      />
         <div className="flex-1">
           <HeaderDocs
             title="intro js"
