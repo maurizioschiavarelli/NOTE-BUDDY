@@ -1,7 +1,7 @@
-import Navbar from '../Navbar';
-import Footer from '../Footer';
-import Sidebar from '../Sidebar';
-import HeaderDocs from '../HeaderDocs';
+import Navbar from '../../Navbar';
+import Footer from '../../Footer';
+import Sidebar from '../../Sidebar';
+import HeaderDocs from '../../HeaderDocs';
 
 import {
   CodeBracketIcon,
@@ -27,10 +27,10 @@ import {
 } from "@material-tailwind/react";
 
 const javascriptLinks = [
-  { name: '• Javascript', to: '/javascript' },
-  { name: 'Introduzione a JavaScript', to: '/jsintroduzione' },
+  { name: 'Javascript', to: '/javascript' },
+  { name: 'Introduzione a JavaScript', to: '/javascriptIntroduzione' },
   { name: 'Variabili', to: '/javascript/variabili' },
-  { name: 'Tipi di Dato', to: '/javascript/tipi-dato' },
+  { name: 'Tipi di Dato', to: '/JavascriptTipiDiDati' },
   { name: 'Operatori', to: '/javascript/operatori' },
   { name: 'Strutture di Controllo', to: '/javascript/strutture-controllo' },
   { name: 'Funzioni', to: '/javascript/funzioni' },
@@ -74,13 +74,13 @@ export default function Javascript() {
         />
         <div className="flex-1">
           <HeaderDocs
-            title="Guida completa alle basi teoriche di"
+            title="Guida completa alle basi teoriche di Javascript"
             imgUrl="/src/assets/heroImg.jpg"
-            subTitle="Javascript"
-            description="è il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
+            subTitle="Percorso della guida"
+            description="Javascript è il principale linguaggio per lo sviluppo frontend. Con questa guida, imparerai a padroneggiare il linguaggio fino ad arrivare alla manipolazione del DOM."
           />
           <div className='lg:w-3/4 w-11/12 m-auto h-auto my-10 lg:my-0 lg:mb-10 text-white'>
-            <div className="course-description">
+            <div>
               <h2 className="text-3xl font-semibold mb-4">Cosa imparerai nella guida?</h2>
               <p className="text-lg mb-6">
                 In questa guida, apprenderai le basi della programmazione utilizzando la sintassi di JavaScript. I concetti che esplorerai sono fondamentali per lavorare con JavaScript in vari ambienti di sviluppo.

@@ -19,11 +19,11 @@ export default function HeaderDocs(props) {
                             color="white" 
                             className="mx-auto my-6 w-full leading-snug !text-2xl lg:max-w-3xl lg:!text-5xl">
                             {title}
-                            <span className="leading-snug noteBuddy text-yellow-400">{subTitle}</span>
+                            <span className="leading-snug noteBuddy text-yellow-400"> {subTitle}</span>
                         </h1>
                         <h2 
                             className="mx-auto w-full !text-white lg:text-lg text-base">
-                            <span className="leading-snug text-yellow-400">{subTitle}</span> {description}
+                            {description}
                         </h2>
                     </div>
                 </div>

@@ -11,8 +11,9 @@ import './index.css'
 import Docs from './components/pages/Docs';
 import About from './components/pages/About';
 //Javascript docs
-import Javascript from './components/docs/Javascript';
-import JSintroduzione from './components/docs/Javascript/JSintroduzione';
+import Javascript from './components/docs/Javascript/Javascript';
+import JavascriptIntroduzione from './components/docs/Javascript/JavascriptIntroduzione';
+import JavascriptTipiDiDati from './components/docs/Javascript/JavascriptTipiDiDati';
 
 //Php docs
 import Php from './components/docs/Php';
@@ -35,8 +36,12 @@ const router = createBrowserRouter([
     element: <Javascript />,
   },
   {
-    path: "/jsintroduzione",
-    element: <JSintroduzione />,
+    path: "/javascriptIntroduzione",
+    element: <JavascriptIntroduzione />,
+  },
+  {
+    path: "/javascriptTipiDiDati",
+    element: <JavascriptTipiDiDati />,
   },
   {
     path: "/php",

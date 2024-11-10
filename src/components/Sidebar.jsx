@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import Breadcrumb from './Breadcrumb';
 
@@ -68,14 +68,16 @@ const Sidebar = ({ links, home, currentPage }) => {
         <div className="p-4 text-2xl font-bold">NoteBuddy</div>
         <nav className="flex-1 px-2 py-4 space-y-2">
           {links.map((link, index) => (
-            <Link
+            <NavLink
               key={index}
               to={link.to}
               className="block px-4 py-2 rounded hover:bg-gray-700"
+              activeClassName="text-orange-500 font-bold"
+              exact
               aria-label={`Navigate to ${link.name}`}
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
         </nav>
       </div>
