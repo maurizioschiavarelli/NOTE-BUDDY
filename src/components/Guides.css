@@ -1,0 +1,72 @@
+.containerGuides {
+    font-weight: 400;
+    min-width: 330px;
+}
+
+.containerGuides h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px; /* Maggiore spazio sotto l'intestazione h1 */
+    line-height: 1.4; /* Migliorato il line-height per una lettura più fluida */
+}
+
+.containerGuides h2 {
+    font-weight: 600;
+    line-height: 1.4; /* Migliorato il line-height per una lettura più fluida */
+    font-size: 2rem;
+    margin-bottom: 16px; /* Spazio sotto h2 per separarlo dal contenuto successivo */
+    color: white;
+}
+
+.containerGuides h3 {
+    font-weight: 500;
+    line-height: 1.4; /* Spazio tra le righe per una leggibilità migliore */
+    margin-bottom: 14px; /* Diminuito il margine rispetto a h2 per una gerarchia visiva */
+    color: white;
+    font-size: 1.8rem;
+}
+
+.containerGuides h4 {
+    font-weight: 400;
+    line-height: 1.4; /* Migliorato il line-height */
+    font-size: 1.5rem;
+    margin-bottom: 12px; /* Diminuito il margine per riflettere l'importanza minore */
+    color: white;
+}
+
+.containerGuides p {
+    line-height: 1.6; /* Maggiore spazio tra le righe per migliorare la leggibilità */
+    margin: 12px 0; /* Distanza tra i paragrafi per una migliore separazione */
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: larger;
+    text-rendering: optimizeLegibility;
+    color: rgb(231, 231, 230);
+}
+
+.containerGuides ul li {
+    line-height: 1.6; /* Line height più ampio per migliorare la leggibilità */
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: larger;
+    text-rendering: optimizeLegibility;
+    list-style: disc;
+    margin-bottom: 10px; /* Distanza tra gli elementi della lista */
+    color: rgb(231, 231, 230);
+}
+
+.list ul {
+    padding-left: 3%;
+}
+
+hr {
+    margin: 40px 0;
+    border: white;
+    border-radius: 10px;
+    height: 4px; /* Fai la linea sottile */
+    background-color: white;
+}
+
+

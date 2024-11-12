@@ -10,13 +10,9 @@ import {
 import './index.css'
 import Docs from './components/pages/Docs';
 import About from './components/pages/About';
-//Javascript docs
-import Javascript from './components/docs/Javascript/Javascript';
-import JavascriptIntroduzione from './components/docs/Javascript/JavascriptIntroduzione';
-import JavascriptTipiDiDati from './components/docs/Javascript/JavascriptTipiDiDati';
 
-//Php docs
-import Php from './components/docs/Php';
+//Javascript docs
+import Javascript from './components/docs/Javascript/1-Javascript';
 
 const router = createBrowserRouter([
   {
@@ -32,20 +28,8 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/javascript",
+    path: "/Javascript/*",
     element: <Javascript />,
-  },
-  {
-    path: "/javascriptIntroduzione",
-    element: <JavascriptIntroduzione />,
-  },
-  {
-    path: "/javascriptTipiDiDati",
-    element: <JavascriptTipiDiDati />,
-  },
-  {
-    path: "/php",
-    element: <Php />,
   },
 ]);
 

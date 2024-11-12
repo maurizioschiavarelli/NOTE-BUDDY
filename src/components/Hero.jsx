@@ -111,7 +111,7 @@ export default function Hero() {
                             <div className="min-h-[30rem] flex justify-center align-bottom mt-8">
                                 <ul className='text-black flex flex-col px-10 gap-4'>
                                     <li>
-                                        <Link to="/javascript">
+                                        <Link to="/Javascript/Panoramica">
                                             <button className='h-14 w-full px-12 sm:px-28 md:px-36 lg:px-20 text-white rounded bg-gray-700 shadow-2xl font-extrabold flex items-center justify-center transition hover:bg-blue-gray-50 hover:text-yellow-400 rounded-t-2xl'>
                                                 <FontAwesomeIcon icon={faJs} size="3x" className='mr-2' />
                                                 Javascript

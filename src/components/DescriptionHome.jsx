@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const links = [
-  { name: 'Javascript', to: '/javascript' },
+  { name: 'Javascript', to: '/Javascript/Panoramica' },
   { name: 'PHP', to: '#' },
   { name: 'React', to: '#' },
   { name: 'Laravel', to: '#' },

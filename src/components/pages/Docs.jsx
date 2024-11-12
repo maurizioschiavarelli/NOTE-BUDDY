@@ -13,7 +13,7 @@ export default function Docs() {
                     subTitle="Il linguaggio del web"
                     description="Scopri la guida completa per apprendere le nozioni fondamentali di JavaScript, il linguaggio essenziale per lo sviluppo frontend. Impara a manipolare il DOM, gestire eventi e costruire applicazioni interattive."
                     imgUrl="../src/assets/Javascript.png"
-                    link="/Javascript"
+                    link="/Javascript/Panoramica"
                 />
 
                 <Card

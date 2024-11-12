@@ -59,29 +59,31 @@ const Sidebar = ({ links, home, currentPage }) => {
       {/* Sidebar */}
       <div
         ref={sidebarRef}
-        className={`h-screen bg-gray-800 text-white w-64 flex flex-col overflow-y-scroll fixed lg:sticky top-28 lg:top-16 transition-transform transform ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        } lg:translate-x-0 z-10`}
+        className={`h-screen bg-gray-800 text-white w-64 flex flex-col overflow-y-scroll fixed lg:sticky top-28 lg:top-16 transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          } lg:translate-x-0 z-10`}
         role="navigation"
         aria-label="Sidebar navigation"
       >
-        <div className="p-4 text-2xl font-bold">NoteBuddy</div>
-        <nav className="flex-1 px-2 py-4 space-y-2">
-          {links.map((link, index) => (
-            <NavLink
-              key={index}
-              to={link.to}
-              className="block px-4 py-2 rounded hover:bg-gray-700"
-              activeClassName="text-orange-500 font-bold"
-              exact
-              aria-label={`Navigate to ${link.name}`}
-            >
-              {link.name}
-            </NavLink>
+        <div className="p-4 text-3xl font-bold bg-gradient-to-b from-gray-900 from-50% to-gray-800">NoteBuddy</div>
+        <ul>
+          {links.map((link) => (
+            <li key={link.name}>
+              <NavLink
+                to={link.to} // Assicurati che 'to' inizi con '/javascript/'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'block py-2 px-4 text-white bg-gray-900 rounded-lg font-bold shadow-lg' // Aggiungi classi se attivo
+                    : 'block py-2 px-4 text-white' // Altrimenti mantieni le classi di base
+                }
+              >
+                {link.name}
+              </NavLink>
+            </li>
           ))}
-        </nav>
+        </ul>
       </div>
     </div>
+
   );
 };
 
