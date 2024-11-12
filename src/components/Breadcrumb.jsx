@@ -1,4 +1,4 @@
-import React from 'react';  // Importa React se necessario
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Breadcrumb = () => {

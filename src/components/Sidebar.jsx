@@ -30,7 +30,7 @@ const Sidebar = ({ links, home, currentPage }) => {
   return (
     <div>
       {/* Icona hamburger per schermi piccoli */}
-      <div className="lg:hidden fixed z-20 flex items-center space-x-2 p-3 text-white bg-gray-600/75 w-full">
+      <div className="lg:hidden fixed z-20 flex items-center space-x-2 p-2 text-white bg-gray-600/75 w-full">
         <button onClick={toggleSidebar} aria-label="Toggle sidebar">
           {isOpen ? (
             <XMarkIcon className="h-8 w-8" aria-hidden="true" />

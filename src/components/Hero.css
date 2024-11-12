@@ -1,0 +1,52 @@
+/* Bordo luminoso (effetto glow) */
+.hero {
+  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  border-color: #0366d6; /* Colore blu chiaro */
+  border: 2px solid #0366d6;
+  box-shadow: 0 0 30px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
+  border-radius: 38px;
+}
+
+.hero:hover,
+.hero:focus-within,
+.heroImg:hover,
+.heroImg:focus-within {
+  border-color: #0366d6; /* Colore blu chiaro */
+  box-shadow: 0 0 155px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
+}
+
+.buttonGlow {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.buttonGlow:hover {
+  box-shadow: 0 0 10px rgba(3, 102, 214, 0.6); /* Glow sui bottoni */
+  background-color: #035c8c;
+  color: white;
+}
+
+.heroImg {
+  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  border-top: 2px solid #0366d6;
+  border-bottom: 2px solid #0366d6;
+  box-shadow: 0 0 30px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
+}
+
+.title {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Aggiungere l'animazione di sbiancamento quando il contenuto si sovrappone */
+.transparent {
+  opacity: 0;  /* Quando il contenuto è sopra, la scritta diventa trasparente */
+}
+h1{
+  color: #035c8c;
+  color: #0366d6; /* Colore del testo blu */
+  font-size: 3rem; /* Puoi cambiare la dimensione del testo */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 
+    0 0 5px rgba(3, 102, 214, 0.7),   /* Primo livello: ombra leggera */
+    0 0 25px rgba(3, 102, 214, 0.3);  /* Ultimo livello: ombra più sfumata */
+}
