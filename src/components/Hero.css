@@ -40,13 +40,19 @@
 .transparent {
   opacity: 0;  /* Quando il contenuto è sopra, la scritta diventa trasparente */
 }
-h1{
+.noteBuddyH1{
+  text-decoration: underline;
   color: #035c8c;
-  color: #0366d6; /* Colore del testo blu */
-  font-size: 3rem; /* Puoi cambiare la dimensione del testo */
+  color: #0366d6;
+  font-size: 3rem; 
   font-weight: bold;
   text-align: center;
   text-shadow: 
-    0 0 5px rgba(3, 102, 214, 0.7),   /* Primo livello: ombra leggera */
-    0 0 25px rgba(3, 102, 214, 0.3);  /* Ultimo livello: ombra più sfumata */
+    /* 0 0 5px rgba(3, 102, 214, 0.7), */
+    0 0 25px rgba(3, 102, 214, 0.3);
+    transition: 0.9s;
+}
+
+.noteBuddyH1:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
 }

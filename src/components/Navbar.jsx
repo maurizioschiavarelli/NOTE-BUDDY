@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-gray-900 navbar w-screen z-50">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8 bottomGlow">
         <div className="relative flex h-16 items-center justify-between">
 
           {/* Mobile Menu Button */}
@@ -33,9 +33,9 @@ export default function Navbar() {
 
           {/* Logo and Desktop Navigation Links */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
+            <div className="flex flex-shrink-0 items-center noteBuddy">
               <Link to="/" aria-label="Navigate to homepage">
-                <h2 className="text-white font-semibold">NoteBuddy</h2>
+                <h2>NoteBuddy</h2>
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">

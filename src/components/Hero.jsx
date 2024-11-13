@@ -40,8 +40,8 @@ export default function Hero () {
     <div className='bg-gradient-to-b from-1% from-gray-900 to-gray-800 py-10 text-white'>
       <div className='mx-5 md:mx-auto lg:mx-5 max-w-2xl lg:max-w-full'>
         {/* Sezione titolo */}
-        <div id="title" className='top-10 sticky my-40 p-10 title h-full' onScroll={scroll}>
-          <h1 className='font-semibold text-4xl text-center'>
+        <div id="title" className='top-20 sticky my-52 pb-10 title h-full' onScroll={scroll}>
+          <h1 className='font-semibold text-4xl text-center noteBuddyH1'>
             noteBuddy
           </h1>
           <p className='mx-auto mt-2 max-w-3xl font-semibold text-4xl text-balance text-center text-gray-950 sm:text-5xl tracking-tight'>
@@ -67,7 +67,7 @@ export default function Hero () {
                 </p>
               </div>
               <div className='[container-type:inline-size] relative max-lg:mx-auto w-full max-lg:max-w-sm min-h-[30rem] grow'>
-                <div className='top-10 bottom-0 absolute inset-x-10 border-gray-300 border-x-[3cqw] bg-gray-900 shadow-2xl border-t-[3cqw] rounded-t-[12cqw] overflow-hidden'>
+                <div className='top-10 bottom-0 absolute inset-x-10 border-gray-300 border-x-[1cqw] bg-gray-900 shadow-2xl border-t-[1cqw] rounded-t-[12cqw] overflow-hidden'>
                   <img
                     className='object-top object-cover size-full'
                     src={responsiveImg}

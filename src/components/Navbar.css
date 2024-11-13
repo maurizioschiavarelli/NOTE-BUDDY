@@ -1,5 +1,25 @@
-.navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bottomGlow {
+  border-color: #0366d6; /* Colore blu chiaro */
+  border-bottom: 1px solid #0366d6;
+  box-shadow: 0 0 12px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
+}
+
+.noteBuddy {
+  text-decoration: underline;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.noteBuddy:hover {
+  color: #0366d6;
+  text-shadow: rgba(3, 102, 214, 0.3);
+  filter: drop-shadow(0 0 10em #646cffaa);
+  transition: 0.3s;
 }

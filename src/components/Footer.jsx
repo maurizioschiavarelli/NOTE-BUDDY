@@ -24,7 +24,7 @@ export default function Footer() {
 
                 {/* Sezione link */}
                 <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-                    <Typography variant="h5" className="mb-6 text-white">
+                    <Typography variant="h5" className="mb-6 text-white underline">
                         NoteBuddy
                     </Typography>
                     <div className="grid grid-cols-3 justify-between gap-4">

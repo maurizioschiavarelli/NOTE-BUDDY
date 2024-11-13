@@ -40,7 +40,7 @@ export default function DescriptionHome() {
 
       <div className="mx-auto px-6 py-8 max-w-7xl">
         <div className="mx-auto lg:mx-0 max-w-2xl">
-          <h2 className="font-semibold text-5xl text-white sm:text-7xl tracking-tight">noteBuddy</h2>
+          <h2 className="font-semibold text-5xl text-white sm:text-7xl tracking-tight underline">noteBuddy</h2>
           <p className="mt-8 font-medium text-gray-300 text-lg text-pretty sm:text-xl/8">
             Scopri le guide per i principali linguaggi e framework per lo sviluppo web
           </p>
