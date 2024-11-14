@@ -5,7 +5,10 @@ import Navbar from '../../Navbar'
 import Footer from '../../Footer'
 import Sidebar from '../../Sidebar'
 
-import '../../Guides.css';
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
+import '../../Guides.css'
 
 import JavascriptPanoramica from './2-JavascriptPanoraminca'
 import JavascriptIntroduzione from './3-JavascriptIntroduzione'
@@ -49,6 +52,12 @@ const javascriptLinks = [
 ]
 
 export default function Javascript () {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0) // Scroll ogni volta che cambia la rotta
+  }, [location])
+
   return (
     <>
       {/* Impostazioni del documento */}

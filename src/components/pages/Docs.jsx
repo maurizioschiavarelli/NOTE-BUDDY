@@ -10,7 +10,17 @@ import Card from '../Card'
 import { Helmet } from 'react-helmet'
 import '../Hero.css'
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 export default function Docs () {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll ogni volta che cambia la rotta
+  }, [location]);
+
   return (
     <>
       <Helmet>
