@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,16 +7,18 @@
   </head>
   <body>
     <script>
-      // Rimuoviamo "404.html" dalla URL e reindirizziamo solo verso index.html
+      // Ottieni il percorso corrente
       const currentPath = window.location.pathname;
-
-      // Verifica se il percorso non è la root e non contiene "404.html"
+      
+      // Verifica che non sia la pagina 404 stessa
       if (!currentPath.endsWith('/404.html')) {
-        // Ricarica il percorso corrente ma sempre servendo `index.html`
-        window.location.replace('/note-buddy'+ currentPath);
+        // Redirigi alla stessa rotta, ma sempre servendo `index.html`
+        // La parte importante è mantenere il percorso attuale (per esempio `/note-buddy/docs`)
+        window.location.replace('/note-buddy/index.html' + currentPath);
       }
     </script>
   </body>
 </html>
+
 
 
