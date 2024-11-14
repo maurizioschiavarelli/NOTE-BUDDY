@@ -7,14 +7,16 @@
   </head>
   <body>
     <script>
-      // Ottieni il percorso corrente
+      // Rimuoviamo "404.html" dalla URL e reindirizziamo solo verso index.html
       const currentPath = window.location.pathname;
-      
-      // Rimuovi la parte del percorso se contiene "404.html" o simili
-      const redirectUrl = currentPath.endsWith('/') ? currentPath + 'index.html' : currentPath + '/index.html';
-      
-      // Redirige alla stessa pagina (index.html) per far gestire la rotta da React Router
-      window.location.href = redirectUrl;
+
+      // Verifica se il percorso non è la root e non contiene "404.html"
+      if (!currentPath.endsWith('/404.html')) {
+        // Ricarica il percorso corrente ma sempre servendo `index.html`
+        window.location.replace(currentPath + '/index.html');
+      }
     </script>
   </body>
 </html>
+
+
