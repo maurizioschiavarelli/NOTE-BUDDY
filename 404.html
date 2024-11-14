@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +15,7 @@
       // Verifica se il percorso non è la root e non contiene "404.html"
       if (!currentPath.endsWith('/404.html')) {
         // Ricarica il percorso corrente ma sempre servendo `index.html`
-        window.location.replace(currentPath + '/index.html');
+        window.location.replace('/note-buddy'+ currentPath);
       }
     </script>
   </body>
