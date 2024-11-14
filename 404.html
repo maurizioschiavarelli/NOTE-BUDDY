@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,11 +15,12 @@
       if (!currentPath.endsWith('/404.html')) {
         // Redirigi alla stessa rotta, ma sempre servendo `index.html`
         // La parte importante è mantenere il percorso attuale (per esempio `/note-buddy/docs`)
-        window.location.replace('/note-buddy/index.html' + currentPath);
+        window.location.replace('/note-buddy/' + currentPath);
       }
     </script>
   </body>
 </html>
+
 
 
 
