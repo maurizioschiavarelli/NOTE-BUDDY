@@ -7,8 +7,14 @@
   </head>
   <body>
     <script>
-      // Redirige tutte le richieste alla pagina principale
-      window.location.href = '/note-buddy/';
+      // Ottieni il percorso corrente
+      const currentPath = window.location.pathname;
+      
+      // Rimuovi la parte del percorso se contiene "404.html" o simili
+      const redirectUrl = currentPath.endsWith('/') ? currentPath + 'index.html' : currentPath + '/index.html';
+      
+      // Redirige alla stessa pagina (index.html) per far gestire la rotta da React Router
+      window.location.href = redirectUrl;
     </script>
   </body>
 </html>
