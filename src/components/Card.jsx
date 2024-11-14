@@ -18,7 +18,7 @@ export default function CardComponent ({
   iconClassName
 }) {
   return (
-    <Card className={`flex w-full sm:max-w-md flex-col sm:flex-row m-2 bg-gray-800 text-white shadow-xl glowCard ${className}`}>
+    <Card className={`flex w-full sm:max-w-md flex-col sm:flex-row m-2 bg-gray-800 shadow-xl ${className}`}>
       <CardHeader
         shadow={true}
         floated={true}
@@ -28,13 +28,13 @@ export default function CardComponent ({
         {Icon && <Icon className={`text-4xl ${iconClassName}`} />}
       </CardHeader>
       <CardBody>
-        <Typography variant='h6' color='white' className='mb-4 uppercase'>
+        <Typography variant='h6' className='mb-4 uppercase'>
           {title}
         </Typography>
-        <Typography variant='h4' color='white' className='mb-2'>
+        <Typography variant='h4' className='mb-2'>
           {subTitle}
         </Typography>
-        <Typography color='white' className='mb-8 font-normal'>
+        <Typography className='mb-8 font-normal'>
           {description}
         </Typography>
         <Link to={link} className='inline-block '>

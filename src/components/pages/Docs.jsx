@@ -10,16 +10,15 @@ import Card from '../Card'
 import { Helmet } from 'react-helmet'
 import '../Hero.css'
 
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export default function Docs () {
-
-  const location = useLocation();
+  const location = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll ogni volta che cambia la rotta
-  }, [location]);
+    window.scrollTo(0, 0) // Scroll ogni volta che cambia la rotta
+  }, [location])
 
   return (
     <>
@@ -29,9 +28,9 @@ export default function Docs () {
 
       <Navbar />
 
-      <div className='flex flex-wrap gap-6 py-10 sm:py-10 m-auto justify-center bg-gradient-to-b from-gray-900 from-1% to-gray-800 text-black'>
+      <div className='flex flex-wrap gap-6 py-10 sm:py-10 m-auto justify-center bg-gradient-to-b from-gray-900 from-1% to-gray-800'>
         <Card
-          className='buttonGlowJs'
+          className='buttonGlowJs transition hover:scale-105 text-white'
           title='JAVASCRIPT'
           subTitle='Il linguaggio del web'
           description='Scopri la guida completa per apprendere le nozioni fondamentali di JavaScript, il linguaggio essenziale per lo sviluppo frontend. Impara a manipolare il DOM, gestire eventi e costruire applicazioni interattive.'
@@ -41,7 +40,7 @@ export default function Docs () {
         />
 
         <Card
-          className='buttonGlowPhp'
+          className='buttonGlowPhp transition hover:scale-105 text-white'
           title='PHP'
           subTitle='Scripting lato server'
           description='Impara a dominare PHP, il linguaggio di scripting lato server, con questa guida dettagliata. Gestisci database, sessioni utente e crea applicazioni web dinamiche e scalabili.'
@@ -51,7 +50,7 @@ export default function Docs () {
         />
 
         <Card
-          className='buttonGlowReact'
+          className='buttonGlowReact transition hover:scale-105 text-white'
           title='REACT'
           subTitle='Costruisci interfacce utente'
           description="Un'introduzione approfondita a React, la libreria JavaScript per creare interfacce utente moderne. Impara a progettare componenti riutilizzabili, gestire lo stato e utilizzare gli hook."
@@ -61,7 +60,7 @@ export default function Docs () {
         />
 
         <Card
-          className='buttonGlowLaravel'
+          className='buttonGlowLaravel transition hover:scale-105 text-white'
           title='LARAVEL'
           subTitle='Framework PHP moderno'
           description='Esplora Laravel, uno dei framework PHP più avanzati per la creazione di applicazioni web scalabili. Impara a gestire routing, controller, migrazioni e altre funzionalità avanzate.'
@@ -71,7 +70,7 @@ export default function Docs () {
         />
 
         <Card
-          className='buttonGlowBootstrap'
+          className='buttonGlowBootstrap transition hover:scale-105 text-white'
           title='BOOTSTRAP'
           subTitle='Design reattivo'
           description='Impara ad utilizzare Bootstrap, il framework CSS che semplifica la creazione di siti web reattivi. Scopri come realizzare layout moderni, flessibili e componenti riutilizzabili.'
@@ -81,7 +80,7 @@ export default function Docs () {
         />
 
         <Card
-          className='buttonGlowTailwind'
+          className='buttonGlowTailwind transition hover:scale-105 text-white'
           title='TAILWIND'
           subTitle='Utility-first CSS'
           description='Scopri Tailwind CSS, il framework utility-first che ti permette di creare interfacce utente personalizzate in modo rapido ed efficiente. Impara a usare le classi di utilità per uno stile flessibile e moderno.'
