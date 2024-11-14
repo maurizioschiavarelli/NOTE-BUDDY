@@ -63,12 +63,11 @@
 
 hr {
     margin: 40px 0;
-    border: #0366d6;
+    border: #e935c1;
     border-radius: 10px;
     height: 4px; /* Fai la linea sottile */
-    background-color: #0366d6;
-    box-shadow: 0 0 12px rgba(1, 117, 250, 0.6);
-    
+    background-color: #e935c1;
+    box-shadow: 1 1 120px rgba(134, 5, 106, 0.8);
 }
 
 
