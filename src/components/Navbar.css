@@ -4,11 +4,11 @@
   left: 0;
 }
 
-.bottomGlow {
-  border-color: #0366d6; /* Colore blu chiaro */
+/* .bottomGlow {
+  border-color: #0366d6;
   border-bottom: 1px solid #0366d6;
-  box-shadow: 0 0 12px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
-}
+  box-shadow: 0 0 12px rgba(3, 102, 214, 0.6);
+} */
 
 .noteBuddy {
   text-decoration: underline;
