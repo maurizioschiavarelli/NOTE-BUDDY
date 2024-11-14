@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,18 +7,12 @@
   </head>
   <body>
     <script>
-      // Ottieni il percorso corrente
-      const currentPath = window.location.pathname;
-      
-      // Verifica che non sia la pagina 404 stessa
-      if (!currentPath.endsWith('/404.html')) {
-        // Redirigi alla stessa rotta, ma sempre servendo `index.html`
-        // La parte importante è mantenere il percorso attuale (per esempio `/note-buddy/docs`)
-        window.location.replace('/note-buddy/' + currentPath);
-      }
+      // Redirige tutte le richieste alla pagina principale
+      window.location.href = '/note-buddy/index.html';
     </script>
   </body>
 </html>
+
 
 
 
