@@ -1,13 +1,15 @@
-import { Route, Routes } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Route, Routes } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
-import Navbar from '../../Navbar';
-import Footer from '../../Footer';
-import Sidebar from '../../Sidebar';
+import Navbar from '../../Navbar'
+import Footer from '../../Footer'
+import Sidebar from '../../Sidebar'
 
-import JavascriptPanoramica from './2-JavascriptPanoraminca';
-import JavascriptIntroduzione from './3-JavascriptIntroduzione';
-import JavascriptTipiDiDato from './4-JavascriptTipiDiDato';
+import '../../Guides.css';
+
+import JavascriptPanoramica from './2-JavascriptPanoraminca'
+import JavascriptIntroduzione from './3-JavascriptIntroduzione'
+import JavascriptTipiDiDato from './4-JavascriptTipiDiDato'
 
 // Definizione dei link di navigazione per il JavaScript
 const javascriptLinks = [
@@ -32,7 +34,10 @@ const javascriptLinks = [
   { name: 'Destructuring', to: '/Javascript/destructuring' },
   { name: 'Template Literals', to: '/Javascript/template-literals' },
   { name: 'Higher-order Functions', to: '/Javascript/higher-order-functions' },
-  { name: 'Prototipi e Ereditarietà', to: '/Javascript/prototipi-ereditarieta' },
+  {
+    name: 'Prototipi e Ereditarietà',
+    to: '/Javascript/prototipi-ereditarieta'
+  },
   { name: 'This in JavaScript', to: '/Javascript/this' },
   { name: 'Classi (ES6)', to: '/Javascript/classi' },
   { name: 'Mappe e Set', to: '/Javascript/mappe-set' },
@@ -41,37 +46,44 @@ const javascriptLinks = [
   { name: 'Performance e Ottimizzazione', to: '/Javascript/performance' },
   { name: 'Testing in JavaScript', to: '/Javascript/testing' },
   { name: 'Patterns di Design', to: '/Javascript/design-patterns' }
-];
+]
 
-export default function Javascript() {
+export default function Javascript () {
   return (
     <>
       {/* Impostazioni del documento */}
       <Helmet>
-        <link rel="stylesheet" type="text/css" href="/src/components/Guides.css" />
+        <link
+          rel='stylesheet'
+          type='text/css'
+          href='/note-buddy/src/components/Guides.css'
+        />
         <title>JavaScript</title>
       </Helmet>
 
       {/* Navbar */}
       <Navbar />
 
-      <div className="flex bg-gray-800">
+      <div className='flex bg-gray-800'>
         {/* Sidebar */}
-        <Sidebar links={javascriptLinks} home="Javascript" currentPage="Argomenti" />
+        <Sidebar
+          links={javascriptLinks}
+          home='Javascript'
+          currentPage='Argomenti'
+        />
 
-        <div className="flex-1 containerGuides">
+        <div className='flex-1 containerGuides'>
           {/* Definizione delle rotte */}
           <Routes>
-            <Route path="Panoramica" element={<JavascriptPanoramica />} />
-            <Route path="Introduzione" element={<JavascriptIntroduzione />} />
-            <Route path="TipiDiDato" element={<JavascriptTipiDiDato />} />
+            <Route path='Panoramica' element={<JavascriptPanoramica />} />
+            <Route path='Introduzione' element={<JavascriptIntroduzione />} />
+            <Route path='TipiDiDato' element={<JavascriptTipiDiDato />} />
           </Routes>
-
         </div>
       </div>
 
       {/* Footer */}
       <Footer />
     </>
-  );
+  )
 }

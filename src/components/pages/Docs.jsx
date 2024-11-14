@@ -7,12 +7,16 @@ import { IoLogoJavascript } from 'react-icons/io'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 import Card from '../Card'
-
+import { Helmet } from 'react-helmet'
 import '../Hero.css'
 
 export default function Docs () {
   return (
     <>
+      <Helmet>
+        <title>noteBuddy | Docs</title>
+      </Helmet>
+
       <Navbar />
 
       <div className='flex flex-wrap gap-6 py-10 sm:py-10 m-auto justify-center bg-gradient-to-b from-gray-900 from-1% to-gray-800 text-black'>

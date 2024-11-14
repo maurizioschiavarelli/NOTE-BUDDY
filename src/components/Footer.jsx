@@ -3,15 +3,29 @@ import { Typography } from "@material-tailwind/react";
 const Links = [
     {
         title: "Tecnologie utilizzate",
-        items: ["React", "Vite", "Tailwind"],
+        items: [
+            { name: "React", url: "https://reactjs.org/" },
+            { name: "Vite", url: "https://vitejs.dev/" },
+            { name: "Tailwind", url: "https://tailwindcss.com/" },
+        ],
     },
     {
         title: "Docs",
-        items: ["Javascript", "React", "PHP", "Laravel"],
+        items: [
+            { name: "Javascript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+            { name: "React", url: "https://reactjs.org/docs/getting-started.html" },
+            { name: "PHP", url: "https://www.php.net/docs.php" },
+            { name: "Laravel", url: "https://laravel.com/docs" },
+        ],
     },
     {
         title: "About me",
-        items: ["Portfolio", "Curriculum", "LinkedIn", "GitHub"],
+        items: [
+            { name: "Portfolio", url: "https://www.example.com/portfolio" },
+            { name: "Curriculum", url: "https://www.example.com/curriculum" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/tuo-nome" },
+            { name: "GitHub", url: "https://github.com/tuo-nome" },
+        ],
     },
 ];
 
@@ -36,15 +50,16 @@ export default function Footer() {
                                 >
                                     {title}
                                 </Typography>
-                                {items.map((link) => (
-                                    <li key={link}>
+                                {items.map(({ name, url }) => (
+                                    <li key={name}>
                                         <Typography
                                             as="a"
-                                            href="#"
+                                            href={url}
+                                            target="_blank" // Aggiungi questa proprietà se vuoi aprire i link in una nuova scheda
                                             color="gray"
                                             className="py-1.5 font-normal transition-colors text-gray-100 hover:text-white"
                                         >
-                                            {link}
+                                            {name}
                                         </Typography>
                                     </li>
                                 ))}

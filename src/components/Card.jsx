@@ -18,7 +18,7 @@ export default function CardComponent ({
   iconClassName
 }) {
   return (
-    <Card className={`flex w-full sm:max-w-md flex-col sm:flex-row m-2 bg-gray-800 text-white shadow-xl ${className}`}>
+    <Card className={`flex w-full sm:max-w-md flex-col sm:flex-row m-2 bg-gray-800 text-white shadow-xl glowCard ${className}`}>
       <CardHeader
         shadow={true}
         floated={true}

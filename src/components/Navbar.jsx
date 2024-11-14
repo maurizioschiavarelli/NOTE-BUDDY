@@ -37,7 +37,7 @@ export default function Navbar () {
             >
               <Bars3Icon
                 aria-hidden='true'
-                className='block h-6 w-6 group-data-[open]:hidden<AiTwotoneSetting />'
+                className='block h-6 w-6 group-data-[open]:hidden'
               />
               <XMarkIcon
                 aria-hidden='true'
