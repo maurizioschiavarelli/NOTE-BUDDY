@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // build: {
-  //   assetsDir: 'assets',
-  // },
+  base: '/note-buddy/',
+  build: {
+    assetsDir: '/src/assets/',
+  },
 })
 

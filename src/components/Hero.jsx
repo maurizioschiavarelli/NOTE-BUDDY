@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faJs } from '@fortawesome/free-brands-svg-icons'
-import { faPhp } from '@fortawesome/free-brands-svg-icons'
-import { faReact } from '@fortawesome/free-brands-svg-icons'
-import { faLaravel } from '@fortawesome/free-brands-svg-icons'
-import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
-import Tailwind from '../assets/MyIcon'
+import { SiTailwindcss } from 'react-icons/si'
+import { FaBootstrap } from 'react-icons/fa'
+import { FaLaravel } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
+import { FaPhp } from 'react-icons/fa'
+import { IoLogoJavascript } from 'react-icons/io'
+
 import './Hero.css'
 
 import { useEffect } from 'react';
@@ -38,7 +38,7 @@ export default function Hero () {
   return (
     // Contenitore principale della sezione HERO
     <div className='bg-gradient-to-b from-1% from-gray-900 to-gray-800 py-10 text-white'>
-      <div className='mx-5 md:mx-auto lg:mx-5 max-w-2xl lg:max-w-full'>
+      <div className='mx-5 md:mx-auto max-w-2xl lg:max-w-7xl lg:mx-auto'>
         {/* Sezione titolo */}
         <div id="title" className='top-20 sticky my-52 pb-10 title h-full' onScroll={scroll}>
           <h1 className='font-semibold text-4xl text-center noteBuddyH1'>
@@ -142,63 +142,43 @@ export default function Hero () {
               </div>
 
               {/* Sezione dei pulsanti di collegamento */}
-              <div className='align-bottom flex justify-center mt-8 min-h-[30rem]'>
+              <div className='align-bottom flex justify-center min-h-[30rem]'>
                 <ul className='flex flex-col gap-4 px-10 text-black'>
                   <li>
                     <Link to='/Javascript/Panoramica'>
-                      <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-36 lg:px-20 rounded rounded-t-2xl w-full h-14 font-extrabold text-white hover:text-yellow-400 transition buttonGlow'>
-                        <FontAwesomeIcon
-                          icon={faJs}
-                          size='3x'
-                          className='mr-2'
-                        />
+                      <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-36 lg:px-20 rounded rounded-t-2xl w-full h-14 font-extrabold text-white hover:text-yellow-400 transition buttonGlowJs'>
+                      <IoLogoJavascript className='text-5xl mr-3'/>
                         Javascript
                       </button>
                     </Link>
                   </li>
                   <li>
-                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-blue-900 transition buttonGlow'>
-                      <FontAwesomeIcon
-                        icon={faPhp}
-                        size='3x'
-                        className='mr-4'
-                      />
+                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-blue-900 transition buttonGlowPhp'>
+                      <FaPhp className='text-5xl mr-3'/>
                       PhP
                     </button>
                   </li>
                   <li>
-                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-light-blue-700 transition buttonGlow'>
-                      <FontAwesomeIcon
-                        icon={faReact}
-                        size='3x'
-                        className='mr-2'
-                      />
+                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-light-blue-700 transition buttonGlowReact'>
+                      <FaReact className='text-5xl mr-3'/>
                       React
                     </button>
                   </li>
                   <li>
-                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-red-700 transition buttonGlow'>
-                      <FontAwesomeIcon
-                        icon={faLaravel}
-                        size='3x'
-                        className='mr-2'
-                      />
+                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-red-700 transition buttonGlowLaravel'>
+                      <FaLaravel className='text-5xl mr-3'/>
                       Laravel
                     </button>
                   </li>
                   <li>
-                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-purple-700 transition buttonGlow'>
-                      <FontAwesomeIcon
-                        icon={faBootstrap}
-                        size='3x'
-                        className='mr-2'
-                      />
+                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-purple-700 transition buttonGlowBootstrap'>
+                      <FaBootstrap className='text-5xl mr-3'/>
                       Bootstrap
                     </button>
                   </li>
                   <li>
-                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-light-blue-600 transition buttonGlow'>
-                      <Tailwind />
+                    <button className='flex justify-center items-center bg-gray-700 hover:bg-blue-gray-50 shadow-2xl px-12 sm:px-28 md:px-24 lg:px-20 rounded w-full h-14 font-extrabold text-white hover:text-light-blue-600 transition buttonGlowTailwind'>
+                      <SiTailwindcss className='text-5xl mr-3'/>
                       Tailwind
                     </button>
                   </li>

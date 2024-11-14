@@ -1,9 +1,11 @@
 /* Bordo luminoso (effetto glow) */
 .hero {
   transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  border-color: #0366d6; /* Colore blu chiaro */
+  border-color: #0366d6;
+  /* Colore blu chiaro */
   border: 2px solid #0366d6;
-  box-shadow: 0 0 30px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
+  box-shadow: 0 0 30px rgba(3, 102, 214, 0.6);
+  /* Effetto glow blu */
   border-radius: 38px;
 }
 
@@ -11,16 +13,16 @@
 .hero:focus-within,
 .heroImg:hover,
 .heroImg:focus-within {
-  border-color: #0366d6; /* Colore blu chiaro */
-  box-shadow: 0 0 155px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
-}
-
-.buttonGlow {
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-color: #0366d6;
+  /* Colore blu chiaro */
+  box-shadow: 0 0 155px rgba(3, 102, 214, 0.6);
+  /* Effetto glow blu */
 }
 
 .buttonGlow:hover {
-  box-shadow: 0 0 10px rgba(3, 102, 214, 0.6); /* Glow sui bottoni */
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 50px rgba(3, 102, 214, 0.6);
+  /* Glow sui bottoni */
   background-color: #035c8c;
   color: white;
 }
@@ -29,7 +31,8 @@
   transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
   border-top: 2px solid #0366d6;
   border-bottom: 2px solid #0366d6;
-  box-shadow: 0 0 30px rgba(3, 102, 214, 0.6); /* Effetto glow blu */
+  box-shadow: 0 0 30px rgba(3, 102, 214, 0.6);
+  /* Effetto glow blu */
 }
 
 .title {
@@ -38,21 +41,72 @@
 
 /* Aggiungere l'animazione di sbiancamento quando il contenuto si sovrappone */
 .transparent {
-  opacity: 0;  /* Quando il contenuto è sopra, la scritta diventa trasparente */
+  opacity: 0;
+  /* Quando il contenuto è sopra, la scritta diventa trasparente */
 }
-.noteBuddyH1{
+
+.noteBuddyH1 {
   text-decoration: underline;
   color: #035c8c;
   color: #0366d6;
-  font-size: 3rem; 
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  text-shadow: 
+  text-shadow:
     /* 0 0 5px rgba(3, 102, 214, 0.7), */
     0 0 25px rgba(3, 102, 214, 0.3);
-    transition: 0.9s;
+  transition: 0.9s;
 }
 
 .noteBuddyH1:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.buttonGlowJs:hover {
+  transition: box-shadow 0.4s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 60px rgba(227, 160, 8, 0.6);
+  /* Glow sui bottoni */
+
+  color: white;
+
+}
+
+.buttonGlowPhp:hover {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 60px rgba(35, 56, 118, 0.6);
+  /* Glow sui bottoni */
+
+  color: white;
+}
+
+.buttonGlowReact:hover {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 60px rgba(2, 136, 209, 0.6);
+  /* Glow sui bottoni */
+
+  color: white;
+}
+
+.buttonGlowLaravel:hover {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 26px rgba(200, 30, 30, 0.6);
+  /* Glow sui bottoni */
+
+  color: white;
+}
+
+.buttonGlowBootstrap:hover {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 60px rgba(108, 43, 217, 0.6);
+  /* Glow sui bottoni */
+
+  color: white;
+}
+
+.buttonGlowTailwind:hover {
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 0 60px rgba(3, 155, 229, 0.6);
+  /* Glow sui bottoni */
+
+  color: white;
 }

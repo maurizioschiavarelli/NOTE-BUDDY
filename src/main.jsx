@@ -33,9 +33,9 @@ const router = createBrowserRouter(
       element: <Javascript />,
     },
   ],
-  // {
-  //   basename: '/note-buddy', // Aggiungi questo per GitHub Pages
-  // }
+  {
+    basename: '/note-buddy', // Aggiungi questo per GitHub Pages
+  }
 )
 
 createRoot(document.getElementById('root')).render(
