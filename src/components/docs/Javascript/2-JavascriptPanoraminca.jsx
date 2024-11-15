@@ -1,8 +1,6 @@
-import { FaJsSquare } from "react-icons/fa"; 
+import { FaJsSquare } from 'react-icons/fa'
 import HeaderDocs from '../../HeaderDocs'
 import { Helmet } from 'react-helmet'
-
-
 
 import {
   CodeBracketIcon,

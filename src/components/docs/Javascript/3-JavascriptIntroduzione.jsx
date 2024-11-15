@@ -262,7 +262,7 @@ export default function JavascriptIntroduzione () {
             <SyntaxHighlighter
               language='javascript'
               style={nightOwl}
-              className='rounded-lg w-80 sm:w-full'
+              className='rounded-lg m-auto text-center w-80 sm:w-full'
             >
               {codeString}
             </SyntaxHighlighter>

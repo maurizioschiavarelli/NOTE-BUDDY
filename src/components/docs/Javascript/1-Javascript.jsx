@@ -1,18 +1,20 @@
-import { Route, Routes } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import { Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-import Navbar from '../../Navbar'
-import Footer from '../../Footer'
-import Sidebar from '../../Sidebar'
+import Navbar from '../../Navbar';
+import Footer from '../../Footer';
+import Sidebar from '../../Sidebar';
 
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-import '../../Guides.css'
+import '../../Guides.css';
 
-import JavascriptPanoramica from './2-JavascriptPanoraminca'
-import JavascriptIntroduzione from './3-JavascriptIntroduzione'
-import JavascriptTipiDiDato from './4-JavascriptTipiDiDato'
+import JavascriptPanoramica from './2-JavascriptPanoraminca';
+import JavascriptIntroduzione from './3-JavascriptIntroduzione';
+import JavascriptVariabili from './3.1-JavascriptVariabili'
+import JavascriptTipiDiDato from './4-JavascriptTipiDiDato';
+import JavascriptOperatori from './5-JavascriptOperatori';
 
 // Definizione dei link di navigazione per il JavaScript
 const javascriptLinks = [
@@ -20,7 +22,7 @@ const javascriptLinks = [
   { name: 'Introduzione', to: '/Javascript/Introduzione' },
   { name: 'Variabili', to: '/Javascript/Variabili' },
   { name: 'Tipi di Dato', to: '/Javascript/TipiDiDato' },
-  { name: 'Operatori', to: '/Javascript/operatori' },
+  { name: 'Operatori', to: '/Javascript/Operatori' },
   { name: 'Strutture di Controllo', to: '/Javascript/strutture-controllo' },
   { name: 'Funzioni', to: '/Javascript/funzioni' },
   { name: 'Oggetti', to: '/Javascript/oggetti' },
@@ -86,7 +88,9 @@ export default function Javascript () {
           <Routes>
             <Route path='Panoramica' element={<JavascriptPanoramica />} />
             <Route path='Introduzione' element={<JavascriptIntroduzione />} />
+            <Route path='Variabili' element={<JavascriptVariabili />} />
             <Route path='TipiDiDato' element={<JavascriptTipiDiDato />} />
+            <Route path='Operatori' element={<JavascriptOperatori />} />
           </Routes>
         </div>
       </div>
