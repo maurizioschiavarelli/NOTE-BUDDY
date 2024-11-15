@@ -29,8 +29,9 @@ export default function Docs () {
       <Navbar />
 
       <div className='flex flex-wrap gap-6 py-10 sm:py-10 m-auto justify-center bg-gradient-to-b from-gray-900 from-1% to-gray-800'>
+        
         <Card
-          className='buttonGlowJs transition hover:scale-105 text-white'
+          className='buttonGlowJs  duration-300 ease-in-out transition hover:scale-105 text-white'
           title='JAVASCRIPT'
           subTitle='Il linguaggio del web'
           description='Scopri la guida completa per apprendere le nozioni fondamentali di JavaScript, il linguaggio essenziale per lo sviluppo frontend. Impara a manipolare il DOM, gestire eventi e costruire applicazioni interattive.'

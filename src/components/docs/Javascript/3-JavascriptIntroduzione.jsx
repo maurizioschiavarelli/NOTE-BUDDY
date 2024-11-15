@@ -1,11 +1,16 @@
+import { FaJsSquare } from 'react-icons/fa'
+import { FaVuejs } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
+import { DiNodejsSmall } from 'react-icons/di'
+import { DiCss3Full } from 'react-icons/di'
+import { AiOutlineHtml5 } from 'react-icons/ai'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import HeaderDocs from '../../HeaderDocs'
-import jsHtmlCss from '../../../assets/jsHtmlCss.png'
 import { Helmet } from 'react-helmet'
+import Modal from '../../Modal'
 
 import React from 'react'
-import { FaJsSquare } from "react-icons/fa"; 
 import {
   Accordion,
   AccordionHeader,
@@ -70,11 +75,64 @@ export default function JavascriptIntroduzione () {
             all&apos;introduzione di tecnologie come Node.js, che consente di
             eseguire JavaScript anche lato server.
           </p>
-          <img
-            src={jsHtmlCss}
-            alt='Esempio di codice JavaScript'
-            className='my-6 w-full h-auto'
-          />
+          <hr />
+          <h2>Linguaggi e framework utilizzati con Javacript</h2>
+          <div className='flex flex-wrap text-center justify-evenly m-auto'>
+            <div>
+              <FaJsSquare className='text-9xl text-yellow-400' />
+              <Modal
+                title='Javascript'
+                Icon={FaJsSquare}
+                iconClassName='text-8xl text-yellow-400'
+                description="JavaScript è uno dei linguaggi di programmazione più utilizzati al mondo per lo sviluppo web. È un linguaggio di scripting lato client che consente di aggiungere interattività alle pagine web. La sua capacità di manipolare il DOM (Document Object Model) lo rende fondamentale per lo sviluppo di applicazioni web dinamiche e responsive. JavaScript è anche utilizzato lato server con l aiuto di Node.js, creando un ecosistema di sviluppo full-stack. Supporta programmazione orientata agli oggetti, funzionale e imperativa, ed è la base di molti framework moderni, come React, Angular e Vue.js. JavaScript si integra bene con HTML e CSS, rendendo possibile la creazione di esperienze web interattive, dalla semplice validazione dei form all'implementazione di applicazioni web complesse e in tempo reale."
+              />
+            </div>
+            <div>
+              <AiOutlineHtml5 className='text-9xl text-orange-600' />
+              <Modal
+                title='HTML 5'
+                Icon={AiOutlineHtml5}
+                iconClassName='text-8xl text-orange-600'
+                description="HTML5 è l'ultima versione del linguaggio di markup che struttura il contenuto delle pagine web. È stato progettato per essere il cuore del web moderno, migliorando la semantica e le funzionalità rispetto alle versioni precedenti. HTML5 include nuovi elementi semantici come <article>, <section>, <header>, <footer> e <nav>, che aiutano a organizzare il contenuto in modo logico, migliorando l'accessibilità e l'ottimizzazione per i motori di ricerca (SEO). Inoltre, HTML5 ha introdotto il supporto nativo per contenuti multimediali, come video e audio, senza la necessità di plugin esterni. Le API JavaScript integrate in HTML5, come la Geolocalizzazione, la gestione dei file locali e la gestione offline tramite il LocalStorage, hanno reso HTML5 la base per lo sviluppo di applicazioni web moderne, che possono funzionare anche senza una connessione internet continua."
+              />
+            </div>
+            <div>
+              <DiCss3Full className='text-9xl text-blue-500' />
+              <Modal
+                title='CSS'
+                Icon={DiCss3Full}
+                iconClassName='text-8xl text-blue-500'
+                description="CSS3 è la versione più recente del linguaggio di stilizzazione che definisce l'aspetto delle pagine web. È essenziale per separare la struttura del contenuto HTML dalla presentazione visiva, consentendo una gestione più efficiente del layout e del design. CSS3 ha introdotto numerosi miglioramenti rispetto alle versioni precedenti, tra cui animazioni, transizioni, effetti di ombre, bordi arrotondati, e griglie. L'uso di flexbox e CSS grid ha semplificato la creazione di layout complessi, mentre le media queries permettono di progettare layout responsive, adattabili a schermi di diverse dimensioni. CSS3, combinato con tecniche avanzate di pre-processori come Sass e Less, consente di creare interfacce utente moderne e scalabili, migliorando sia l'estetica che l'usabilità delle applicazioni web."
+              />
+            </div>
+            <div>
+              <DiNodejsSmall className='text-9xl text-green-400' />
+              <Modal
+                title='NodeJS'
+                Icon={DiNodejsSmall}
+                iconClassName='text-8xl text-green-400'
+                description="Node.js è un ambiente di runtime JavaScript open-source che permette di eseguire JavaScript sul lato server. Basato sul motore V8 di Google Chrome, Node.js è progettato per costruire applicazioni veloci ed efficienti, soprattutto per applicazioni in tempo reale e scalabili, come i server di chat e le applicazioni di streaming video. Grazie alla sua architettura non bloccante e orientata agli eventi, Node.js è particolarmente adatto per applicazioni che richiedono un elevato numero di operazioni di I/O, come le API RESTful. Utilizzando Node.js, gli sviluppatori possono scrivere sia il codice client che quello server in JavaScript, semplificando il flusso di lavoro e migliorando la manutenzione del codice. Inoltre, l'ecosistema di pacchetti di Node.js, tramite npm (Node Package Manager), fornisce una vasta gamma di librerie e strumenti che accelerano lo sviluppo."
+              />
+            </div>
+            <div>
+              <FaReact className='text-9xl text-light-blue-700' />
+              <Modal
+                title='React'
+                Icon={FaReact}
+                iconClassName='text-8xl text-light-blue-700'
+                description="React è una libreria JavaScript sviluppata da Facebook per la creazione di interfacce utente (UI) dinamiche e scalabili. È particolarmente utilizzata per lo sviluppo di single-page applications (SPA), dove il contenuto della pagina viene aggiornato in modo dinamico senza necessità di ricaricare l'intera pagina. React utilizza un sistema basato sui componenti, che permette di creare interfacce modulari e riutilizzabili. Uno degli aspetti più innovativi di React è il Virtual DOM, che ottimizza il rendering delle modifiche all'interfaccia, migliorando la performance. Con l'introduzione di React Hooks, gli sviluppatori possono gestire lo stato e gli effetti collaterali in modo più conciso e leggibile. React ha un vasto ecosistema di strumenti e librerie, come React Router per la navigazione e Redux per la gestione dello stato, che lo rendono ideale per progetti di grandi dimensioni."
+              />
+            </div>
+            <div>
+              <FaVuejs className='text-9xl text-green-800' />
+              <Modal
+                title='VueJS'
+                Icon={FaVuejs}
+                iconClassName='text-8xl text-green-800'
+                description='Vue.js è un framework JavaScript progressivo che si concentra sulla creazione di interfacce utente reattive e sulla costruzione di applicazioni web moderne. È stato progettato per essere adottato in modo incrementale, il che significa che puoi iniziare con piccole funzionalità e gradualmente integrare funzionalità avanzate quando necessario. Vue è noto per la sua curva di apprendimento relativamente bassa, rendendolo una scelta ideale per i principianti. Offre un sistema reattivo che consente di aggiornare automaticamente la UI quando i dati cambiano, e utilizza una sintassi semplice ma potente. Con il supporto per la creazione di componenti, il routing, e la gestione dello stato tramite Vuex, Vue.js può essere utilizzato per costruire applicazioni complesse e ad alte prestazioni. La documentazione di Vue è chiara e ben organizzata, e la sua comunità in crescita contribuisce regolarmente con risorse e plugin.'
+              />
+            </div>
+          </div>
         </section>
 
         <hr className='border-t-2 border-gray-600 mb-6' />
